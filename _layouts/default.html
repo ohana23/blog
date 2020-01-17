@@ -1,0 +1,25 @@
+<!-- 
+    This will be the default layout of every page.
+    Meaning: it will contain both the navbar and the footer that should
+    remain consistent across pages.
+    
+    TODO: Create a navbar (differentiate between mobile and desktop).
+    TODO: Consider a footer (actually probably not necessary for this design).
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/style.css">
+  </head>
+  <body>
+    <nav>
+      <a href="{{site.baseurl}}/">Home</a>
+    </nav>
+    <section>
+      {{ content }}
+    </section>
+  </body>
+</html>

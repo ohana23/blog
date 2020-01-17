@@ -1,0 +1,128 @@
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    color: #0000003a;
+    font-size: 42px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 27px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+section {
+    float: left;
+}
+
+button {
+    margin-top: 10px;
+    width: 80px;
+    height: 40px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.05s ease, box-shadow 0.2s ease;
+    -moz-transition: transform 0.2s ease, background-color 0.2s ease, color 0.05s ease, box-shadow 0.2s ease;
+    -webkit-transition: transform 0.2s ease, background-color 0.2s ease, color 0.05s ease, box-shadow 0.2s ease;
+    -o-transition: transform 0.2s ease, background-color 0.2s ease, color 0.05s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    background-color: #ECFFF1;
+    color: #28C147;
+    cursor: pointer;
+    border: rgb(16, 202, 16) solid 2px;
+    box-shadow: 0px 3px 10px rgba(17, 245, 25, 0.404);
+}
+
+.mainArticleLink {
+    position: relative;
+    background-color: white;
+    /* float: left; */
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+    /* margin-right: 20px; */
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 2px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: transform 0.4s ease, background-color 0.4s ease, color 0.05s ease, box-shadow 0.4s ease;
+    -moz-transition: transform 0.4s ease, background-color 0.4s ease, color 0.05s ease, box-shadow 0.4s ease;
+    -webkit-transition: transform 0.4s ease, background-color 0.4s ease, color 0.05s ease, box-shadow 0.4s ease;
+    -o-transition: transform 0.4s ease, background-color 0.4s ease, color 0.05s ease, box-shadow 0.4s ease;
+}
+
+.mainArticleLink:hover {
+    transform: translateY(-5px);
+    background-color: #ECFFF1; /* check how it looks without this */
+    color: #28C147; /* this */
+    cursor: pointer;
+    border: rgb(16, 202, 16) solid 2px; /* this */
+    box-shadow: 0px 5px 15px rgba(17, 245, 25, 0.404); /* and this */
+}
+
+
+.arrowIndicatorCircle {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid black;
+    bottom: 10px;
+    right: 10px;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+}
+
+.mainArticleLink:hover > .arrowIndicatorCircle {
+    background: radial-gradient(137.5% 137.5% at 70% 32.5%, 
+              rgba(0, 255, 25, 0.57) 0%, rgba(18, 178, 214, 0.46) 100%);
+    transform: rotate(-5deg);
+    border: rgb(16, 202, 16) solid 2px;
+    box-shadow: 0px 5px 15px rgba(17, 245, 25, 0.404);
+}
+
+/* change color of .arrowIndicatorArrow on hover */
+.arrowIndicatorArrow {
+    position: absolute;
+    width: 20px;
+    transform: rotate(315deg);
+    margin: 0 auto;
+    bottom: 5px;
+    right: 5px;
+}
+
+@media only screen and (min-width: 860px) {
+    body {
+        display: table-cell; 
+        vertical-align: middle;
+    }
+
+    .mainArticleLink {
+        float: left;
+        margin-right: 20px;
+    }
+  }

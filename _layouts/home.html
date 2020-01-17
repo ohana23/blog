@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<!-- The homepage's html content. -->
+
+<!-- Need to include some logic in here to get the 3
+most recent posts. -->
+
+<body>
+    <section>
+        <h1>Writing</h1>
+        <div class="posts">
+            {% for post in site.posts %}
+                <a href="{{ site.baseurl }}{{ post.url }}">{% include mainArticleLink.html postTitle=post.title %}</a>
+            {% endfor %}
+        </div>
+        <a href="/"><button>All</button></a>
+    </section>
+
+    <section>
+        <h1>Who I Am</h1>
+        <h2>
+            I’m a Software Engineer currently living in Washington D.C. 
+            Interested in designing software and creating it.
+        </h2>
+        <h2>
+            Graduated from<br>
+            The University of Central Florida<br>
+            React Nanodegree Program (Udacity)<br><br>
+            
+            Hobbies include<br>
+            Climbing<br>
+            Watching films<br>
+            Reading books<br>
+        </h2>
+        &copy; to me
+    </section>
+</body>

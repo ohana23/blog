@@ -2,23 +2,34 @@
 layout: default
 ---
 
-<!-- The homepage's html content. -->
-
-<!-- Need to include some logic in here to get the 3
-most recent posts. -->
-
 <body>
+
     <section>
-        <h1>Writing</h1>
-        <div class="posts">
-            {% for post in site.posts %}
-                <a href="{{ site.baseurl }}{{ post.url }}">{% include mainArticleLink.html postTitle=post.title %}</a>
-            {% endfor %}
+        <h2>Thoughts About Things</h2>
+        <hr>
+
+        <div class="articles-container">
+                {% for post in site.posts limit: 3 %}
+                    {% assign date = post.date | date: '%m.%d.%Y' %}
+                    <a href="{{ site.baseurl }}{{ post.url }}">{% include article.html postTitle=post.title postDate=date %}</a>
+                {% endfor %}
         </div>
-        <a href="/"><button>All</button></a>
     </section>
 
     <section>
+        <h2>My Whole Story</h2>
+        <hr>
+
+        <p>
+            Right now I'm a Software Engineer at GEICO.
+        </p>
+    </section>
+
+
+
+    <!-- <a href="/"><button>All</button></a> -->
+
+    <!-- <section style="background-color: darkblue;">
         <h1>Who I Am</h1>
         <h2>
             I’m a Software Engineer currently living in Washington D.C. 
@@ -35,5 +46,5 @@ most recent posts. -->
             Reading books<br>
         </h2>
         &copy; to me
-    </section>
+    </section> -->
 </body>

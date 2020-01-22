@@ -3,8 +3,8 @@
     Meaning: it will contain both the navbar and the footer that should
     remain consistent across pages.
     
-    TODO: Create a navbar (differentiate between mobile and desktop).
-    TODO: Consider a footer (actually probably not necessary for this design).
+    TODO: Create a navbar (different for mobile and desktop).
+    TODO: Consider a footer (but probably not necessary for this design).
 -->
 
 <!doctype html>
@@ -15,11 +15,9 @@
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/style.css">
   </head>
   <body>
-    <nav>
-      <a href="{{site.baseurl}}/">Home</a>
-    </nav>
     <section>
-      {{ content }}
+      <a href="/"><h1>Daniel Ohana</h1></a>
     </section>
+    {{ content }}
   </body>
 </html>

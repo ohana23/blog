@@ -5,5 +5,5 @@ date:   2020-01-16 19:03:00 -0500
 categories: jekyll update
 ---
 
-<h2>These are the best movies of 2019.<h2>
+These are the best movies of 2019.
 

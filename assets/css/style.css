@@ -1,11 +1,152 @@
-html {
-    display: table;
-    margin: auto;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: rgb(20, 20, 20);
+    text-rendering: optimizeLegibility;
+    color: white;
+    padding: 20px;
 }
 
+hr {
+    border: 1px solid rgba(255, 208, 0, 0.356);
+}
+
+/* Hiding the arrow for now. */
+img {
+    display: none;
+}
+
+section {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 52px;
+    text-align: center;
+}
+
+h1:hover {
+    color: rgba(255, 208, 0, 0.924);
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+h3 {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.articles-container {
+    max-width: 1000px;
+    margin: 40px auto 40px auto;
+}
+
+.article {
+    position: relative;
+    padding: 30px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    overflow: hidden;
+    height: 150px;
+    border-radius: 8px;
+    background-color: rgb(30, 30, 30);
+
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.05s ease, box-shadow 0.2s ease;
+    -moz-transition: transform 0.2s ease, background-color 0.2s ease, color 0.05s ease, box-shadow 0.2s ease;
+    -webkit-transition: transform 0.2s ease, background-color 0.2s ease, color 0.05s ease, box-shadow 0.2s ease;
+    -o-transition: transform 0.2s ease, background-color 0.2s ease, color 0.05s ease, box-shadow 0.2s ease;
+}
+
+.article:hover {
+    color: rgb(255, 255, 0);
+    background-color: rgb(58, 49, 13);
+    cursor: pointer;
+}
+
+@media (min-width: 950px) {
+    .articles-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .article {
+        width: 300px;
+        height: 200px;
+    }
+
+    .article:hover {
+        transform: translateY(-5px);
+        color: rgb(255, 255, 0);
+        background-color: rgb(58, 49, 13);
+        cursor: pointer;
+    }
+}
+
+.date-badge {
+    line-height: 0px;
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(148, 148, 148);
+    background-color: rgba(77, 77, 77, 0.274);
+    padding: 6px;
+    border-radius: 10px;
+}
+
+.arrowIndicatorCircle {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid black;
+    bottom: 10px;
+    right: 10px;
+}
+
+.article:hover > .arrowIndicatorCircle {
+    border: 2px solid rgba(255, 255, 0, 0.644);
+}
+
+.article:hover > .date-badge {
+    color: yellow;
+    background-color: red;
+}
+
+.arrowIndicatorArrow {
+    position: absolute;
+    width: 20px;
+    transform: rotate(315deg);
+    margin: 0 auto;
+    bottom: 5px;
+    right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 body {
     font-family: Helvetica, sans-serif;
-    padding: 20px;
+    background-color: lightblue;
 }
 
 h1 {
@@ -27,7 +168,8 @@ a {
 }
 
 section {
-    float: left;
+    margin: auto;
+    width: 90%;
 }
 
 button {
@@ -56,32 +198,29 @@ button:hover {
     box-shadow: 0px 3px 10px rgba(17, 245, 25, 0.404);
 }
 
-.mainArticleLink {
+.article {
     position: relative;
     background-color: white;
-    /* float: left; */
-    height: 250px;
-    width: 250px;
-    margin: 0 auto;
-    /* margin-right: 20px; */
+    width: 20vw;
+    height: 20vw;
     margin-bottom: 20px;
     border-radius: 8px;
     border: 2px solid black;
     padding: 10px;
     box-sizing: border-box;
-    transition: transform 0.4s ease, background-color 0.4s ease, color 0.05s ease, box-shadow 0.4s ease;
-    -moz-transition: transform 0.4s ease, background-color 0.4s ease, color 0.05s ease, box-shadow 0.4s ease;
-    -webkit-transition: transform 0.4s ease, background-color 0.4s ease, color 0.05s ease, box-shadow 0.4s ease;
-    -o-transition: transform 0.4s ease, background-color 0.4s ease, color 0.05s ease, box-shadow 0.4s ease;
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.05s ease, box-shadow 0.2s ease;
+    -moz-transition: transform 0.2s ease, background-color 0.2s ease, color 0.05s ease, box-shadow 0.2s ease;
+    -webkit-transition: transform 0.2s ease, background-color 0.2s ease, color 0.05s ease, box-shadow 0.2s ease;
+    -o-transition: transform 0.2s ease, background-color 0.2s ease, color 0.05s ease, box-shadow 0.2s ease;
 }
 
-.mainArticleLink:hover {
+.article:hover {
     transform: translateY(-5px);
-    background-color: #ECFFF1; /* check how it looks without this */
-    color: #28C147; /* this */
+    background-color: #ECFFF1; 
+    color: #28C147;
     cursor: pointer;
-    border: rgb(16, 202, 16) solid 2px; /* this */
-    box-shadow: 0px 5px 15px rgba(17, 245, 25, 0.404); /* and this */
+    border: rgb(16, 202, 16) solid 2px;
+    box-shadow: 0px 5px 15px rgba(17, 245, 25, 0.404);
 }
 
 
@@ -97,7 +236,7 @@ button:hover {
     transition: transform 0.3s ease;
 }
 
-.mainArticleLink:hover > .arrowIndicatorCircle {
+.article:hover > .arrowIndicatorCircle {
     background: radial-gradient(137.5% 137.5% at 70% 32.5%, 
               rgba(0, 255, 25, 0.57) 0%, rgba(18, 178, 214, 0.46) 100%);
     transform: rotate(-5deg);
@@ -105,7 +244,6 @@ button:hover {
     box-shadow: 0px 5px 15px rgba(17, 245, 25, 0.404);
 }
 
-/* change color of .arrowIndicatorArrow on hover */
 .arrowIndicatorArrow {
     position: absolute;
     width: 20px;
@@ -113,16 +251,4 @@ button:hover {
     margin: 0 auto;
     bottom: 5px;
     right: 5px;
-}
-
-@media only screen and (min-width: 860px) {
-    body {
-        display: table-cell; 
-        vertical-align: middle;
-    }
-
-    .mainArticleLink {
-        float: left;
-        margin-right: 20px;
-    }
-  }
+} */

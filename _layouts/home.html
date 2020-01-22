@@ -9,15 +9,21 @@ layout: default
         <hr>
 
         <div class="articles-container">
-                {% for post in site.posts limit: 3 %}
-                    {% assign date = post.date | date: '%m.%d.%Y' %}
-                    <a href="{{ site.baseurl }}{{ post.url }}">{% include article.html postTitle=post.title postDate=date %}</a>
-                {% endfor %}
+            {% for post in site.posts limit: 3 %}
+                {% assign date = post.date | date: '%m.%d.%Y' %}
+                <a href="{{ site.baseurl }}{{ post.url }}">
+                    {% include article.html postTitle=post.title postDate=date %}
+                </a>
+            {% endfor %}
         </div>
+        
+        <!-- Center this and create a proper link for it. -->
+        <!-- <a href="/"><button class="secondary-button">View All Posts</button></a> -->
+
     </section>
 
     <section>
-        <h2>My Whole Story</h2>
+        <h2>About Me</h2>
         <hr>
 
         <p>
@@ -25,26 +31,4 @@ layout: default
         </p>
     </section>
 
-
-
-    <!-- <a href="/"><button>All</button></a> -->
-
-    <!-- <section style="background-color: darkblue;">
-        <h1>Who I Am</h1>
-        <h2>
-            I’m a Software Engineer currently living in Washington D.C. 
-            Interested in designing software and creating it.
-        </h2>
-        <h2>
-            Graduated from<br>
-            The University of Central Florida<br>
-            React Nanodegree Program (Udacity)<br><br>
-            
-            Hobbies include<br>
-            Climbing<br>
-            Watching films<br>
-            Reading books<br>
-        </h2>
-        &copy; to me
-    </section> -->
 </body>

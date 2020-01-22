@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/style.css">
+    <title>{{ page.title }} | Daniel Ohana</title>
+</head>
+<body>
+
+    <section>
+        <a href="/"><h1>Daniel Ohana</h1></a>
+    </section>
+    
+    <section>
+        <a href="/"><button class="secondary-button">Back</button></a>
+
+        <h2>{{ page.title }}</h2>
+        <p style="line-height: 0;">{{ page.date | date_to_long_string: "ordinal", "US" }}</p>
+        <hr style="margin-bottom: 30px;">
+        <p>{{ content }}</p>
+    </section>
+
+</body>
+</html>

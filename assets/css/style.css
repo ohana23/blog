@@ -26,7 +26,7 @@ h1 {
     text-align: center;
 }
 
-h1:hover {
+h1:hover h1:active {
     color: rgba(255, 208, 0, 0.924);
 }
 
@@ -69,7 +69,7 @@ a {
     -o-transition: transform 0.2s ease, background-color 0.2s ease, color 0.05s ease, box-shadow 0.2s ease;
 }
 
-.article:hover {
+.article:hover .article:active {
     color: rgb(255, 255, 0);
     background-color: rgb(58, 49, 13);
     cursor: pointer;
@@ -86,7 +86,7 @@ a {
         height: 200px;
     }
 
-    .article:hover {
+    .article:hover .article:active {
         transform: translateY(-5px);
         color: rgb(255, 255, 0);
         background-color: rgb(58, 49, 13);

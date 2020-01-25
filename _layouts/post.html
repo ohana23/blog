@@ -9,17 +9,18 @@
 </head>
 <body>
 
-    <section>
+    <section class="section-post">
         <a href="/"><h1>Daniel Ohana</h1></a>
     </section>
     
-    <section>
-        <a href="/"><button class="secondary-button">Back</button></a>
+    <section class="section-post">
+        <!-- <a href="/"><button class="secondary-button" style="margin-left: -5px;">View All Posts</button></a> -->
 
         <h2>{{ page.title }}</h2>
-        <p style="line-height: 0;">{{ page.date | date_to_long_string: "ordinal", "US" }}</p>
-        <hr style="margin-bottom: 30px;">
-        <p>{{ content }}</p>
+        <p style="line-height: 0; margin-top: -12px; margin-bottom: 30px;">{{ page.date | date_to_long_string: "ordinal", "US" }}</p>
+        <hr style="margin-bottom: 20px;">
+        <!-- <textarea name="" id="" cols="80" rows="40">{{content}}</textarea> -->
+        {{ content }}
     </section>
 
 </body>

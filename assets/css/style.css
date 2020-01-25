@@ -8,10 +8,11 @@ body {
 }
 
 hr {
-    border: 1px solid rgba(255, 208, 0, 0.356);
+    border: 2px solid rgba(255, 208, 0, 0.856);
 }
 
-/* Hiding the arrow for now. */
+/* Hiding the arrow for now with display none. */
+/* Replace it with another, custom svg. */
 img {
     display: none;
 }
@@ -21,13 +22,20 @@ section {
     margin: 0 auto;
 }
 
+.section-post {
+    max-width: 650px;
+}
+
+/* Markdown */
+/* ----------------------------- */
+
 h1 {
     font-size: 52px;
-    text-align: center;
+    letter-spacing: -1px;
 }
 
 h1:hover {
-    color: rgb(255, 255, 0);
+    text-decoration: underline;
 }
 
 h2 {
@@ -42,15 +50,69 @@ h3 {
     font-size: 24px;
 }
 
+strong {
+    color: rgb(206, 206, 206);
+}
+
+ul {
+    padding-left: 17px;
+    line-height: 1.7;
+    font-weight: normal;
+    color: rgba(195, 195, 195, 0.685);
+}
+
+ol {
+    padding-left: 17px;
+    line-height: 1.7;
+    font-weight: normal;
+    color: rgba(195, 195, 195, 0.685);
+}
+
+.footnote, .reversefootnote {
+    color: rgb(161, 132, 0);
+}
+
+.footnote:hover, .reversefootnote:hover {
+    color: rgb(255, 208, 0);
+}
+
 a {
     color: white;
     text-decoration: none;
 }
 
-p {
-    color: rgb(195, 195, 195);
-    line-height: 1.5;
+.section-post a {
+    color: white;
 }
+
+.section-post a:hover {
+    text-decoration: underline;
+}
+
+p {
+    color: rgba(195, 195, 195, 0.685);
+    line-height: 1.7;
+    font-weight: normal;
+}
+
+blockquote p{
+    padding: 20px;
+    color: white;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: bold;
+    border-radius: 16px;
+    background-color: rgb(51, 51, 51);
+    /* background-image: linear-gradient(130deg, #67748d 0%, #474779 50%, #2f5761 100%); */
+    /* background-image: linear-gradient(130deg, #2f5cb1 0%, #38389b 50%, #1a4c58 100%); */
+    /* background: linear-gradient(-40deg, #9adee6 0%, #00a9ff 25%, #3663cc 100%); */
+    /* background-image: linear-gradient(130deg, #9c9152 0%, #837139 50%, #61582f 100%); */
+    /* background-image: linear-gradient(130deg, #c9b33a 0%, #bb9629 50%, #8f7a1f 100%); */
+}
+
+/* ----------------------------- */
+
+/* Other */
 
 .secondary-button {
     padding: 10px;
@@ -71,8 +133,6 @@ p {
 }
 
 .secondary-button:hover {
-    /* color: rgb(255, 255, 0); */
-    background-color: rgb(83, 70, 18);
     background-color: rgb(53, 53, 53);
     cursor: pointer;
 }
@@ -139,7 +199,7 @@ p {
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    border: 2px solid black;
+    border: 2px solid rgba(216, 216, 216, 0.281);
     bottom: 10px;
     right: 10px;
 }
@@ -150,7 +210,6 @@ p {
 
 .article:hover > .date-badge {
     color: yellow;
-    background-color: red;
 }
 
 .arrowIndicatorArrow {
@@ -174,86 +233,6 @@ p {
 
 
 /* 
-body {
-    font-family: Helvetica, sans-serif;
-    background-color: lightblue;
-}
-
-h1 {
-    color: #0000003a;
-    font-size: 42px;
-    margin-bottom: 30px;
-    font-weight: bold;
-}
-
-h2 {
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 27px;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-section {
-    margin: auto;
-    width: 90%;
-}
-
-button {
-    margin-top: 10px;
-    width: 80px;
-    height: 40px;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 10px;
-    background-color: white;
-    border-radius: 5px;
-    border: 2px solid black;
-    box-sizing: border-box;
-    transition: transform 0.2s ease, background-color 0.2s ease, color 0.05s ease, box-shadow 0.2s ease;
-    -moz-transition: transform 0.2s ease, background-color 0.2s ease, color 0.05s ease, box-shadow 0.2s ease;
-    -webkit-transition: transform 0.2s ease, background-color 0.2s ease, color 0.05s ease, box-shadow 0.2s ease;
-    -o-transition: transform 0.2s ease, background-color 0.2s ease, color 0.05s ease, box-shadow 0.2s ease;
-}
-
-button:hover {
-    transform: translateY(-2px);
-    background-color: #ECFFF1;
-    color: #28C147;
-    cursor: pointer;
-    border: rgb(16, 202, 16) solid 2px;
-    box-shadow: 0px 3px 10px rgba(17, 245, 25, 0.404);
-}
-
-.article {
-    position: relative;
-    background-color: white;
-    width: 20vw;
-    height: 20vw;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    border: 2px solid black;
-    padding: 10px;
-    box-sizing: border-box;
-    transition: transform 0.2s ease, background-color 0.2s ease, color 0.05s ease, box-shadow 0.2s ease;
-    -moz-transition: transform 0.2s ease, background-color 0.2s ease, color 0.05s ease, box-shadow 0.2s ease;
-    -webkit-transition: transform 0.2s ease, background-color 0.2s ease, color 0.05s ease, box-shadow 0.2s ease;
-    -o-transition: transform 0.2s ease, background-color 0.2s ease, color 0.05s ease, box-shadow 0.2s ease;
-}
-
-.article:hover {
-    transform: translateY(-5px);
-    background-color: #ECFFF1; 
-    color: #28C147;
-    cursor: pointer;
-    border: rgb(16, 202, 16) solid 2px;
-    box-shadow: 0px 5px 15px rgba(17, 245, 25, 0.404);
-}
-
-
 .arrowIndicatorCircle {
     position: absolute;
     height: 30px;

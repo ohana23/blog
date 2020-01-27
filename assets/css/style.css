@@ -1,240 +1,255 @@
+
+
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    background-color: rgb(20, 20, 20);
-    text-rendering: optimizeLegibility;
-    color: white;
-    padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  background-color: rgb(20, 20, 20);
+  text-rendering: optimizeLegibility;
+  color: white;
+  padding: 20px;
 }
 
 hr {
-    border: 2px solid rgba(255, 208, 0, 0.856);
+  border: 2px solid rgba(255, 208, 0, 0.856);
 }
 
 /* Hiding the arrow for now with display none. */
 /* Replace it with another, custom svg. */
 img {
-    display: none;
+  display: none;
 }
 
 section {
-    max-width: 1000px;
-    margin: 0 auto;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .section-post {
-    max-width: 650px;
+  max-width: 650px;
 }
 
 /* Markdown */
 /* ----------------------------- */
 
 h1 {
-    font-size: 48px;
-    letter-spacing: -1px;
+  font-size: 48px;
+  letter-spacing: -1px;
 }
 
 h1:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 32px;
 }
 
 h3 {
-    font-family: Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 24px;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
 }
 
 strong {
-    color: rgb(206, 206, 206);
+  color: rgb(206, 206, 206);
 }
 
 ul {
-    padding-left: 17px;
-    line-height: 1.7;
-    font-weight: normal;
-    color: rgba(195, 195, 195, 0.685);
+  padding-left: 17px;
+  line-height: 1.7;
+  font-weight: normal;
+  color: rgba(195, 195, 195, 0.685);
 }
 
 ol {
-    padding-left: 17px;
-    line-height: 1.7;
-    font-weight: normal;
-    color: rgba(195, 195, 195, 0.685);
+  padding-left: 17px;
+  line-height: 1.7;
+  font-weight: normal;
+  color: rgba(195, 195, 195, 0.685);
 }
 
-.footnote, .reversefootnote {
-    color: rgb(161, 132, 0);
+.footnote,
+.reversefootnote {
+  color: rgb(161, 132, 0);
 }
 
-.footnote:hover, .reversefootnote:hover {
-    color: rgb(255, 208, 0);
+.footnote:hover,
+.reversefootnote:hover {
+  color: rgb(255, 208, 0);
 }
 
 a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .section-post a {
-    color: white;
+  color: white;
 }
 
 .section-post a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 p {
-    color: rgba(195, 195, 195, 0.685);
-    line-height: 1.7;
-    font-weight: normal;
+  color: rgba(195, 195, 195, 0.685);
+  line-height: 1.7;
+  font-weight: normal;
 }
 
 blockquote p {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: -40px;
-    margin-right: -40px;
-    padding: 20px;
-    color: white;
-    font-size: 15px;
-    line-height: 25px;
-    font-weight: bold;
-    border-radius: 16px;
-    background-color: rgb(51, 51, 51);
-    /* background-image: linear-gradient(130deg, #67748d 0%, #474779 50%, #2f5761 100%); */
-    /* background-image: linear-gradient(130deg, #2f5cb1 0%, #38389b 50%, #1a4c58 100%); */
-    /* background: linear-gradient(-40deg, #9adee6 0%, #00a9ff 25%, #3663cc 100%); */
-    /* background-image: linear-gradient(130deg, #9c9152 0%, #837139 50%, #61582f 100%); */
-    /* background-image: linear-gradient(130deg, #c9b33a 0%, #bb9629 50%, #8f7a1f 100%); */
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: -40px;
+  margin-right: -40px;
+  padding: 20px;
+  color: white;
+  font-size: 15px;
+  line-height: 25px;
+  border-radius: 16px;
+  background-color: rgb(35, 35, 35);
+  /* background-image: linear-gradient(130deg, #67748d 0%, #474779 50%, #2f5761 100%); */
+  /* background-image: linear-gradient(130deg, #2f5cb1 0%, #38389b 50%, #1a4c58 100%); */
+  /* background: linear-gradient(-40deg, #9adee6 0%, #00a9ff 25%, #3663cc 100%); */
+  /* background-image: linear-gradient(130deg, #9c9152 0%, #837139 50%, #61582f 100%); */
+  /* background-image: linear-gradient(130deg, #c9b33a 0%, #bb9629 50%, #8f7a1f 100%); */
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes lift {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0px);
+  }
 }
 
 /* ----------------------------- */
 
 /* Other */
 
-.secondary-button {
-    padding: 10px;
-    border: none;
-    border-radius: 30px;
-    font-family: Helvetica, sans-serif;
-    font-weight: bold;
-    width: 150px;
-    height: 50px;
-    background-color: rgb(30, 30, 30);
-    color: white;
+.logo-container {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+}
 
-    /* Fix later. Transition causes default button background color to appear for a split second. */
-    /* transition: background-color 0.2s ease;
+.secondary-button {
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  width: 150px;
+  height: 50px;
+  background-color: rgb(30, 30, 30);
+  color: white;
+
+  /* Fix later. Transition causes default button background color to appear for a split second. */
+  /* transition: background-color 0.2s ease;
     -moz-transition: background-color 0.2s ease;
     -webkit-transition: background-color 0.2s ease;
     -o-transition: background-color 0.2s ease; */
 }
 
 .secondary-button:hover {
-    background-color: rgb(53, 53, 53);
-    cursor: pointer;
+  background-color: rgb(53, 53, 53);
+  cursor: pointer;
 }
 
 .articles-container {
-    max-width: 1000px;
-    margin: 40px auto 10px auto;
+  max-width: 1000px;
+  margin: 40px auto 10px auto;
 }
 
 .article {
-    position: relative;
-    padding: 30px;
-    padding-top: 10px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-    overflow: hidden;
-    height: 150px;
-    border-radius: 8px;
-    background-color: rgb(30, 30, 30);
+  position: relative;
+  padding: 30px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  overflow: hidden;
+  height: 150px;
+  border-radius: 8px;
+  background-color: rgb(35, 35, 35);
 
-    transition: transform 0.2s ease, background-color 0.2s ease, color 0.05s ease, box-shadow 0.2s ease;
-    -moz-transition: transform 0.2s ease, background-color 0.2s ease, color 0.05s ease, box-shadow 0.2s ease;
-    -webkit-transition: transform 0.2s ease, background-color 0.2s ease, color 0.05s ease, box-shadow 0.2s ease;
-    -o-transition: transform 0.2s ease, background-color 0.2s ease, color 0.05s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.05s ease,
+    box-shadow 0.2s ease;
+  -moz-transition: transform 0.2s ease, background-color 0.2s ease,
+    color 0.05s ease, box-shadow 0.2s ease;
+  -webkit-transition: transform 0.2s ease, background-color 0.2s ease,
+    color 0.05s ease, box-shadow 0.2s ease;
+  -o-transition: transform 0.2s ease, background-color 0.2s ease,
+    color 0.05s ease, box-shadow 0.2s ease;
+
+  animation: fadein 0.8s cubic-bezier(0.23, 1, 0.32, 1),
+    lift 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .article:hover {
-    color: rgb(255, 255, 0);
-    background-color: rgb(58, 49, 13);
-    cursor: pointer;
+  color: rgb(255, 255, 0);
+  background-color: rgb(58, 49, 13);
+  cursor: pointer;
 }
 
 @media (min-width: 950px) {
-    .articles-container {
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .article {
-        width: 300px;
-        height: 200px;
-    }
+  .articles-container {
+    display: flex;
+    justify-content: space-between;
+  }
 
-    .article:hover {
-        transform: translateY(-5px);
-        color: rgb(255, 255, 0);
-        background-color: rgb(58, 49, 13);
-        cursor: pointer;
-    }
+  .article {
+    width: 300px;
+    height: 200px;
+  }
+
+  .article:hover {
+    transform: translateY(-5px);
+    color: rgb(255, 255, 0);
+    background-color: rgb(58, 49, 13);
+    cursor: pointer;
+  }
 }
 
 .date-badge {
-    line-height: 0px;
-    font-size: 12px;
-    font-family: 'Courier New', Courier, monospace;
-    color: rgb(148, 148, 148);
-    background-color: rgba(77, 77, 77, 0.274);
-    padding: 6px;
-    border-radius: 10px;
+  line-height: 0px;
+  font-size: 12px;
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(148, 148, 148);
+  background-color: rgba(77, 77, 77, 0.274);
+  padding: 6px;
+  border-radius: 10px;
 }
 
 .arrowIndicatorCircle {
-    position: absolute;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    border: 2px solid rgba(216, 216, 216, 0.281);
-    bottom: 10px;
-    right: 10px;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid rgba(216, 216, 216, 0.281);
+  bottom: 10px;
+  right: 10px;
 }
 
 .article:hover > .arrowIndicatorCircle {
-    border: 2px solid rgba(255, 255, 0, 0.644);
+  border: 2px solid rgba(255, 255, 0, 0.644);
 }
 
 .article:hover > .date-badge {
-    color: yellow;
+  color: yellow;
 }
-
-.arrowIndicatorArrow {
-    position: absolute;
-    width: 20px;
-    transform: rotate(315deg);
-    margin: 0 auto;
-    bottom: 5px;
-    right: 5px;
-}
-
-
-
-
-
-
-
-
-
-
-
 
 /* 
 .arrowIndicatorCircle {
@@ -264,4 +279,6 @@ blockquote p {
     margin: 0 auto;
     bottom: 5px;
     right: 5px;
-} */
+} 
+
+*/

@@ -10,6 +10,7 @@ body {
 
 hr {
   border: 2px solid rgba(255, 208, 0, 0.856);
+  border-radius: 5px;
 }
 
 section {
@@ -65,12 +66,12 @@ ol {
 
 .footnote,
 .reversefootnote {
-  color: rgb(161, 132, 0);
+  color: rgb(161, 132, 0) !important;
 }
 
 .footnote:hover,
 .reversefootnote:hover {
-  color: rgb(255, 208, 0);
+  color: rgb(255, 208, 0) !important;
 }
 
 a {
@@ -87,7 +88,7 @@ a {
 }
 
 p {
-  color: rgba(195, 195, 195, 0.685);
+  color: rgb(180, 180, 180);
   line-height: 1.7;
   font-weight: normal;
 }
@@ -97,13 +98,14 @@ blockquote p {
   margin-bottom: 1em;
   margin-left: -40px;
   margin-right: -40px;
-  padding: 20px;
-  color: rgb(189, 189, 189);
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 18px;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: rgb(190, 190, 190);
   line-height: 25px;
-  border-radius: 16px;
-  background-color: rgb(35, 35, 35);
+  border-radius: 0px 5px 5px 0px;
+  background-color: rgba(255, 208, 0, 0.068);
+  border-left: 2px solid rgba(255, 208, 0, 0.856);
   /* background-image: linear-gradient(130deg, #67748d 0%, #474779 50%, #2f5761 100%); */
   /* background-image: linear-gradient(130deg, #2f5cb1 0%, #38389b 50%, #1a4c58 100%); */
   /* background: linear-gradient(-40deg, #9adee6 0%, #00a9ff 25%, #3663cc 100%); */
@@ -132,7 +134,6 @@ blockquote p {
 img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
 }
 
 .img-center {
@@ -145,15 +146,18 @@ img {
 
 /* Other */
 
+.round-corners-8 {
+  border-radius: 8px;
+}
+
 .back-home {
   position: absolute;
-  /* border: 2px solid rgb(255, 208, 0); */
   border: 2px solid rgba(195, 195, 195, 0.685);
   box-sizing: border-box;
   width: 35px;
   height: 35px;
-  top: 30px;
-  left: 20px;
+  top: 33px;
+  left: 25px;
   border-radius: 50%;
   text-align: center;
 
@@ -163,7 +167,7 @@ img {
   -o-transition: background-color 0.2s ease;
 }
 
-svg {
+.back-home svg {
   position: relative;
   fill: rgba(195, 195, 195, 0.685);
   margin-top: 7px;
@@ -234,11 +238,9 @@ svg {
   margin-bottom: 10px;
   overflow: hidden;
   height: 150px;
-  border-radius: 8px;
   background-color: rgb(35, 35, 35);
 
-  transition: transform 0.2s ease, background-color 0.2s ease, color 0.05s ease,
-    box-shadow 0.2s ease;
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.05s ease;
   -moz-transition: transform 0.2s ease, background-color 0.2s ease,
     color 0.05s ease, box-shadow 0.2s ease;
   -webkit-transition: transform 0.2s ease, background-color 0.2s ease,
@@ -283,6 +285,11 @@ svg {
   background-color: rgba(77, 77, 77, 0.274);
   padding: 6px;
   border-radius: 10px;
+
+  transition: background-color 0.2s ease, color 0.05s ease;
+  -moz-transition: background-color 0.2s ease, color 0.05s ease;
+  -webkit-transition: background-color 0.2s ease, color 0.05s ease;
+  -o-transition: background-color 0.2s ease, color 0.05s ease;
 }
 
 .arrowIndicatorCircle {
@@ -299,8 +306,10 @@ svg {
   border: 2px solid rgba(255, 255, 0, 0.644);
 }
 
-.article:hover > .date-badge {
+.article:hover .date-badge {
   color: yellow;
+  color: rgba(161, 131, 0, 0.705);
+  background-color: rgba(255, 255, 0, 0.041);
 }
 
 /* 

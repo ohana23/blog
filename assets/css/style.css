@@ -2,115 +2,23 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  background-color: rgb(20, 20, 20);
+  /* background-color: rgb(20, 20, 20); */
+  background-color: white;
   text-rendering: optimizeLegibility;
-  color: white;
+  /* color: white; */
+  color: black;
   padding: 20px;
 }
 
 hr {
-  border: 2px solid rgba(255, 208, 0, 0.856);
+  /* border: 2px solid rgba(255, 208, 0, 0.856); */
+  border: 2px solid #EAF1FF;
   border-radius: 5px;
 }
 
 section {
   max-width: 1000px;
   margin: 0 auto;
-}
-
-.section-post {
-  max-width: 650px;
-}
-
-/* Markdown */
-/* ----------------------------- */
-
-h1 {
-  font-size: 48px;
-  letter-spacing: -1px;
-}
-
-h1:hover {
-  text-decoration: underline;
-}
-
-h2 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 32px;
-}
-
-h3 {
-  font-family: Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 24px;
-}
-
-strong {
-  color: rgb(206, 206, 206);
-}
-
-ul {
-  padding-left: 17px;
-  line-height: 1.7;
-  font-weight: normal;
-  color: rgba(195, 195, 195, 0.685);
-}
-
-ol {
-  padding-left: 17px;
-  line-height: 1.7;
-  font-weight: normal;
-  color: rgba(195, 195, 195, 0.685);
-}
-
-.footnote,
-.reversefootnote {
-  color: rgb(161, 132, 0) !important;
-}
-
-.footnote:hover,
-.reversefootnote:hover {
-  color: rgb(255, 208, 0) !important;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-}
-
-.section-post a {
-  color: white;
-}
-
-.section-post a:hover {
-  text-decoration: underline;
-}
-
-p {
-  color: rgb(180, 180, 180);
-  line-height: 1.7;
-  font-weight: normal;
-}
-
-blockquote p {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: -40px;
-  margin-right: -40px;
-  padding-left: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  color: rgb(190, 190, 190);
-  line-height: 25px;
-  border-radius: 0px 5px 5px 0px;
-  background-color: rgba(255, 208, 0, 0.068);
-  border-left: 2px solid rgba(255, 208, 0, 0.856);
-  /* background-image: linear-gradient(130deg, #67748d 0%, #474779 50%, #2f5761 100%); */
-  /* background-image: linear-gradient(130deg, #2f5cb1 0%, #38389b 50%, #1a4c58 100%); */
-  /* background: linear-gradient(-40deg, #9adee6 0%, #00a9ff 25%, #3663cc 100%); */
-  /* background-image: linear-gradient(130deg, #9c9152 0%, #837139 50%, #61582f 100%); */
-  /* background-image: linear-gradient(130deg, #c9b33a 0%, #bb9629 50%, #8f7a1f 100%); */
 }
 
 @keyframes fadein {
@@ -131,69 +39,10 @@ blockquote p {
   }
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.img-center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* ----------------------------- */
-
 /* Other */
 
 .round-corners-8 {
   border-radius: 8px;
-}
-
-.back-home {
-  position: absolute;
-  border: 2px solid rgba(195, 195, 195, 0.685);
-  box-sizing: border-box;
-  width: 35px;
-  height: 35px;
-  top: 33px;
-  left: 25px;
-  border-radius: 50%;
-  text-align: center;
-
-  transition: background-color 0.2s ease;
-  -moz-transition: background-color 0.2s ease;
-  -webkit-transition: background-color 0.2s ease;
-  -o-transition: background-color 0.2s ease;
-}
-
-.back-home svg {
-  position: relative;
-  fill: rgba(195, 195, 195, 0.685);
-  margin-top: 7px;
-  margin-left: -1px;
-  width: 16px;
-  height: 16px;
-
-  transition: fill 0.2s ease;
-}
-
-@media (min-width: 800px) {
-  .back-home {
-    position: relative;
-    top: 63px;
-    left: -60px;
-    display: inline-block;
-  }
-}
-
-.back-home:hover {
-  background-color: rgb(255, 208, 0);
-  border: 2px solid rgb(255, 208, 0);
-}
-
-.back-home:hover svg {
-  fill: rgb(161, 132, 0);
 }
 
 .logo-container {
@@ -238,7 +87,8 @@ img {
   margin-bottom: 10px;
   overflow: hidden;
   height: 150px;
-  background-color: rgb(35, 35, 35);
+  /* background-color: rgb(35, 35, 35); */
+  background-color: #BBD2FF;
 
   transition: transform 0.2s ease, background-color 0.2s ease, color 0.05s ease;
   -moz-transition: transform 0.2s ease, background-color 0.2s ease,
@@ -253,8 +103,10 @@ img {
 }
 
 .article:hover {
-  color: rgb(255, 255, 0);
-  background-color: rgb(58, 49, 13);
+  /* color: rgb(255, 255, 0); */
+  /* background-color: rgb(58, 49, 13); */
+  color: black;
+  background-color: rgb(129, 171, 255);
   cursor: pointer;
 }
 
@@ -271,8 +123,10 @@ img {
 
   .article:hover {
     transform: translateY(-5px);
-    color: rgb(255, 255, 0);
-    background-color: rgb(58, 49, 13);
+    /* color: rgb(255, 255, 0); */
+    /* background-color: rgb(58, 49, 13); */
+    color: black;
+    background-color: rgb(199, 212, 255);
     cursor: pointer;
   }
 }
@@ -281,10 +135,10 @@ img {
   line-height: 0px;
   font-size: 12px;
   font-family: "Courier New", Courier, monospace;
-  color: rgb(148, 148, 148);
-  background-color: rgba(77, 77, 77, 0.274);
-  padding: 6px;
-  border-radius: 10px;
+  color: black;
+  /* background-color: rgba(77, 77, 77, 0.274); */
+  /* padding: 6px; */
+  /* border-radius: 10px; */
 
   transition: background-color 0.2s ease, color 0.05s ease;
   -moz-transition: background-color 0.2s ease, color 0.05s ease;
@@ -297,19 +151,19 @@ img {
   height: 30px;
   width: 30px;
   border-radius: 50%;
-  border: 2px solid rgba(216, 216, 216, 0.281);
+  /* border: 2px solid white; */
   bottom: 10px;
   right: 10px;
 }
 
 .article:hover > .arrowIndicatorCircle {
-  border: 2px solid rgba(255, 255, 0, 0.644);
+  /* border: 2px solid rgba(255, 255, 0, 0.644); */
+  /* border: 2px solid #0057FF; */
 }
 
 .article:hover .date-badge {
-  color: yellow;
-  color: rgba(161, 131, 0, 0.705);
-  background-color: rgba(255, 255, 0, 0.041);
+  /* color: rgba(161, 131, 0, 0.705); */
+  /* background-color: rgba(255, 255, 0, 0.041); */
 }
 
 /* 

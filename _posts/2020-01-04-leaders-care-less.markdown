@@ -5,7 +5,8 @@ date:   2020-01-04 20:21:43 -0500
 categories: jekyll update
 ---
 
-Resources: [Principle of Least Interest](https://en.wikipedia.org/wiki/Principle_of_least_interest)
+### Resources: 
+[Principle of Least Interest](https://en.wikipedia.org/wiki/Principle_of_least_interest)
 
 I wanted to talk a little bit about charisma and how it relates to a seemingly unrelated quote I heard the other day. The quote went something along the lines of: 
 

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/style.css" />
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/style-markdown.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -15,7 +16,7 @@
     <section class="section-post">
       <div class="logo-container">
         <embed
-          src="{{site.baseurl}}/assets/images/logoYellow.svg"
+          src="{{site.baseurl}}/assets/images/logoLightBlue.svg"
           height="40"
           width="40"
           href="www.example.com"
@@ -24,14 +25,17 @@
     </section>
 
     <section class="section-post">
-
+      <!-- Back-to-home button -->
       <a href="/">
         <div class="back-home">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-            <polygon points="3.828 9 9.899 2.929 8.485 1.515 0 10 .707 10.707 8.485 18.485 9.899 17.071 3.828 11 20 11 20 9 3.828 9"/>
+            <polygon
+              points="3.828 9 9.899 2.929 8.485 1.515 0 10 .707 10.707 8.485 18.485 9.899 17.071 3.828 11 20 11 20 9 3.828 9"
+            />
           </svg>
         </div>
       </a>
+      <!--  -->
 
       <h2>{{ page.title }}</h2>
       <p style="line-height: 0; margin-top: -12px; margin-bottom: 30px;">
@@ -42,4 +46,71 @@
       {{ content }}
     </section>
   </body>
+
+  <style>
+    .section-post {
+      max-width: 650px;
+    }
+
+    .section-post a {
+      color: black;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .img-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .back-home {
+      position: absolute;
+      border: 2px solid #BBD2FF;
+      box-sizing: border-box;
+      width: 35px;
+      height: 35px;
+      top: 33px;
+      left: 25px;
+      border-radius: 50%;
+      text-align: center;
+
+      transition: background-color 0.2s ease;
+      -moz-transition: background-color 0.2s ease;
+      -webkit-transition: background-color 0.2s ease;
+      -o-transition: background-color 0.2s ease;
+    }
+
+    .back-home svg {
+      position: relative;
+      fill: #BBD2FF;
+      margin-top: 7px;
+      margin-left: -1px;
+      width: 16px;
+      height: 16px;
+
+      transition: fill 0.2s ease;
+    }
+
+    @media (min-width: 800px) {
+      .back-home {
+        position: relative;
+        top: 63px;
+        left: -60px;
+        display: inline-block;
+      }
+    }
+
+    .back-home:hover {
+      background-color: #EAF1FF;
+      border: 2px solid #BBD2FF;
+    }
+
+    .back-home:hover svg {
+        fill: #BBD2FF;
+    }
+  </style>
 </html>

@@ -5,6 +5,8 @@ h1 {
   font-weight: bold;
   font-size: 52px;
   margin-bottom: -20px;
+
+  color: var(--h1-color);
 }
 
 h2 {
@@ -48,8 +50,7 @@ ol {
 }
 
 a {
-  /* color: white; */
-  color: black;
+  color: var(--a-color);
   text-decoration: none;
 }
 
@@ -59,7 +60,7 @@ a {
 
 p {
   /* color: rgb(180, 180, 180); */
-  color: rgb(73, 73, 73);
+  color: var(--p-color);
   line-height: 1.7;
   font-weight: normal;
 }
@@ -73,10 +74,9 @@ blockquote p {
   padding-top: 5px;
   padding-bottom: 5px;
   padding-right: 5px;
-  color: black;
   line-height: 25px;
   border-radius: 0px 5px 5px 0px;
-  /* background-color: rgba(255, 208, 0, 0.068); */
-  background-color: #EAF1FF;
+  color: var(--blockquote-text-color);
+  background-color: var(--blockquote-background-color);
   border-left: 2px solid #0057FF;
 }

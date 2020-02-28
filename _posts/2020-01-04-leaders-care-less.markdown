@@ -30,9 +30,11 @@ But I had the upper hand simply because I believed that I cared less. Consciousl
 
 I was wondering if, when it comes to charismatic leaders in movie battles, presidential races, and managerial promotions,  this same idea of caring less comes in handy. 
 
-The leader of a medieval army is probably the oldest or one of the most experienced. Certainly with age, comes less care. The freshman in college is more keen to impress his peers than the 5th year senior. Likewise the new soldier recruit is nervous and cares a lot, not knowing what to expect from this forthcoming experience.
+The leader of a medieval army is probably the oldest or one of the most experienced. This relates to the [Principle of Least Interest](https://en.wikipedia.org/wiki/Principle_of_least_interest). Certainly with age, comes less care. The freshman in college is more keen to impress his peers than the 5th year senior. Likewise the new soldier recruit is nervous and cares a lot, not knowing what to expect from this forthcoming experience.
 
 Do leaders care less?
+
+>It comes down to the fact that caring less and *not giving a shit* in any form of negotiation listed above usually makes you superior, or at least feel so. I should always pretend I’m eating an apple. No one seems to care about anything else when they’re eating an apple.
 
 They say a good leader would do anything for his team, even bite the bullet from higher ups. But are they more willing to do so in part because they’ve learned to care little about what higher ups think, at least when compared to their inferiors?
 
@@ -41,6 +43,3 @@ They say a good leader would do anything for his team, even bite the bullet from
 I’ve certainly felt most confident when I feel a sense of superiority among my group, though perhaps unjustifiably. I’m funnier, more likable, and more pleasant to be around when I don’t care as much about the opinion's of the people in the group
 
 I’m less confident, less likable, and I believe less pleasant, when I’m among people who I have a sense are better than me. Either in intelligence, physique, popularity.... the list goes on. 
-
-
->It comes down to the fact that caring less and *not giving a shit* in any form of negotiation listed above usually makes you superior, or at least feel so. I should always pretend I’m eating an apple. No one seems to care about anything else when they’re eating an apple.

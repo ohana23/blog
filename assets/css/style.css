@@ -1,18 +1,40 @@
+:root {
+  /* Signifies to the browser engine that the color scheme should use the user's preference based
+  on their system color scheme. */
+  color-scheme: light dark;
+
+  /* Color variables. */
+  --h1-color: #333;
+  --p-color: #333;
+  --a-color: #0057FF;
+  --article-text-color: #333;
+  --article-background-color: #BBD2FF;
+  --blockquote-text-color: #333;
+  --blockquote-background-color: #EAF1FF;
+  --hr-color: #EAF1FF;
+}
+
+/* Switch colors for dark mode users. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --h1-color: white;
+    --p-color: #d2d2d2;
+    --a-color: #BBD2FF;
+    --blockquote-text-color: #d2d2d2;
+    --blockquote-background-color: #18253a;
+    --hr-color: #18253a;
+  }
+}
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  /* background-color: rgb(20, 20, 20); */
-  background-color: white;
   text-rendering: optimizeLegibility;
-  /* color: white; */
-  color: black;
   padding: 20px;
 }
 
 hr {
-  /* border: 2px solid rgba(255, 208, 0, 0.856); */
-  border: 2px solid #EAF1FF;
+  border: 2px solid var(--hr-color);
   border-radius: 5px;
 }
 
@@ -53,9 +75,10 @@ section {
   width: 180px;
   height: 40px;
 
-  background: #EAF1FF;
+  color: #0057FF;
+  background: var(--hr-color);
   border: 1px solid #0057FF;
-  /* border: none; */
+
   border-radius: 8px;
 
   font-family: Helvetica;
@@ -67,7 +90,6 @@ section {
 
   box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 
-  color: #0057FF;
 
   transition: transform 0.2s ease, background-color 0.2s ease;
   -moz-transition: transform 0.2s ease, background-color 0.2s ease,
@@ -124,8 +146,9 @@ section {
   margin-bottom: 10px;
   overflow: hidden;
   height: 150px;
-  /* background-color: rgb(35, 35, 35); */
-  background-color: #BBD2FF;
+  color: var(--article-text-color);
+  background-color: var(--article-background-color);
+
 
   transition: transform 0.2s ease, background-color 0.2s ease, color 0.05s ease;
   -moz-transition: transform 0.2s ease, background-color 0.2s ease,

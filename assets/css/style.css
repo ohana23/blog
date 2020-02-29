@@ -4,12 +4,12 @@
   color-scheme: light dark;
 
   /* Color variables. */
-  --h1-color: #333;
-  --p-color: #333;
+  --h1-color: black;
+  --p-color: black;
   --a-color: #0057FF;
-  --article-text-color: #333;
+  --article-text-color: black;
   --article-background-color: #BBD2FF;
-  --blockquote-text-color: #333;
+  --blockquote-text-color: black;
   --blockquote-background-color: #EAF1FF;
   --hr-color: #EAF1FF;
 }
@@ -20,7 +20,7 @@
     --h1-color: white;
     --p-color: #d2d2d2;
     --a-color: #BBD2FF;
-    --blockquote-text-color: #d2d2d2;
+    --blockquote-text-color: white;
     --blockquote-background-color: #18253a;
     --hr-color: #18253a;
   }
@@ -90,7 +90,6 @@ section {
 
   box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 
-
   transition: transform 0.2s ease, background-color 0.2s ease;
   -moz-transition: transform 0.2s ease, background-color 0.2s ease,
     color 0.05s ease, box-shadow 0.2s ease;
@@ -141,13 +140,13 @@ section {
 .article {
   position: relative;
   padding: 30px;
-  padding-top: 10px;
+  padding-top: 5px;
   box-sizing: border-box;
   margin-bottom: 10px;
   overflow: hidden;
   height: 150px;
   color: var(--article-text-color);
-  background-color: var(--article-background-color);
+  /* background-color: var(--article-background-color); */
 
 
   transition: transform 0.2s ease, background-color 0.2s ease, color 0.05s ease;
@@ -166,7 +165,7 @@ section {
   /* color: rgb(255, 255, 0); */
   /* background-color: rgb(58, 49, 13); */
   color: black;
-  background-color: rgb(129, 171, 255);
+  background-color: white;
   cursor: pointer;
 }
 
@@ -182,7 +181,7 @@ section {
   }
 
   .article:hover {
-    transform: translateY(-5px);
+    /* transform: translateY(-5px); */
     /* color: rgb(255, 255, 0); */
     /* background-color: rgb(58, 49, 13); */
     color: black;

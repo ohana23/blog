@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/style.css" />
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/style-markdown.css" />
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/style-post.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <title>{{ page.title }} - Daniel Ohana</title>
+    <title>{{ page.title }} - Danny Ohana</title>
   </head>
   <body>
     <section class="section-post">
@@ -48,71 +49,4 @@
       {{ content }}
     </section>
   </body>
-
-  <style>
-    .section-post {
-      max-width: 650px;
-    }
-
-    .section-post a {
-      color: var(--a-color);
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    .img-center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .back-home {
-      position: absolute;
-      border: 2px solid #BBD2FF;
-      box-sizing: border-box;
-      width: 35px;
-      height: 35px;
-      top: 33px;
-      left: 25px;
-      border-radius: 50%;
-      text-align: center;
-
-      transition: background-color 0.2s ease;
-      -moz-transition: background-color 0.2s ease;
-      -webkit-transition: background-color 0.2s ease;
-      -o-transition: background-color 0.2s ease;
-    }
-
-    .back-home svg {
-      position: relative;
-      fill: #BBD2FF;
-      margin-top: 7px;
-      margin-left: -1px;
-      width: 16px;
-      height: 16px;
-
-      transition: fill 0.2s ease;
-    }
-
-    @media (min-width: 800px) {
-      .back-home {
-        position: relative;
-        top: 63px;
-        left: -60px;
-        display: inline-block;
-      }
-    }
-
-    .back-home:hover {
-      background-color: #EAF1FF;
-      border: 2px solid #BBD2FF;
-    }
-
-    .back-home:hover svg {
-        fill: #BBD2FF;
-    }
-  </style>
 </html>

@@ -9,6 +9,7 @@
   --a-color: #0057FF;
   --article-text-color: black;
   --article-background-color: #BBD2FF;
+  --date-badge-color: black;
   --blockquote-text-color: black;
   --blockquote-background-color: #EAF1FF;
   --hr-color: #EAF1FF;
@@ -20,6 +21,8 @@
     --h1-color: white;
     --p-color: #d2d2d2;
     --a-color: #BBD2FF;
+    --article-text-color: white;
+    --date-badge-color: white;
     --blockquote-text-color: white;
     --blockquote-background-color: #18253a;
     --hr-color: #18253a;
@@ -139,8 +142,8 @@ section {
 
 .article {
   position: relative;
-  padding: 30px;
-  padding-top: 5px;
+  /* padding: 30px; */
+  /* padding-top: 5px; */
   box-sizing: border-box;
   margin-bottom: 10px;
   overflow: hidden;
@@ -164,8 +167,7 @@ section {
 .article:hover {
   /* color: rgb(255, 255, 0); */
   /* background-color: rgb(58, 49, 13); */
-  color: black;
-  background-color: white;
+  /* color: black; */
   cursor: pointer;
 }
 
@@ -178,6 +180,8 @@ section {
   .article {
     width: 300px;
     height: 200px;
+    padding: 30px;
+    padding-top: 5px;
   }
 
   .article:hover {
@@ -194,7 +198,7 @@ section {
   line-height: 0px;
   font-size: 12px;
   font-family: "Courier New", Courier, monospace;
-  color: black;
+  color: var(--date-badge-color);
   /* background-color: rgba(77, 77, 77, 0.274); */
   /* padding: 6px; */
   /* border-radius: 10px; */

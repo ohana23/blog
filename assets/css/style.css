@@ -9,7 +9,9 @@
   --a-color: #0057FF;
   --article-text-color: black;
   --article-background-color: #BBD2FF;
-  --date-badge-color: black;
+  --article-hover-background-color: #BBD2FF;
+  --date-badge-color: #666666;
+  --date-badge-hover-color: black;
   --blockquote-text-color: black;
   --blockquote-background-color: #EAF1FF;
   --hr-color: #EAF1FF;
@@ -22,7 +24,9 @@
     --p-color: #d2d2d2;
     --a-color: #BBD2FF;
     --article-text-color: white;
-    --date-badge-color: white;
+    --article-hover-background-color: white;
+    --date-badge-color: #8d8d8d;
+    --date-badge-hover-color: black;
     --blockquote-text-color: white;
     --blockquote-background-color: #18253a;
     --hr-color: #18253a;
@@ -112,29 +116,6 @@ section {
   float: right;
 }
 
-.secondary-button {
-  padding: 10px;
-  border: none;
-  border-radius: 30px;
-  font-family: Helvetica, sans-serif;
-  font-weight: bold;
-  width: 150px;
-  height: 50px;
-  background-color: rgb(30, 30, 30);
-  color: white;
-
-  /* Fix later. Transition causes default button background color to appear for a split second. */
-  /* transition: background-color 0.2s ease;
-    -moz-transition: background-color 0.2s ease;
-    -webkit-transition: background-color 0.2s ease;
-    -o-transition: background-color 0.2s ease; */
-}
-
-.secondary-button:hover {
-  background-color: rgb(53, 53, 53);
-  cursor: pointer;
-}
-
 .articles-container {
   max-width: 1000px;
   margin: 40px auto 10px auto;
@@ -142,15 +123,11 @@ section {
 
 .article {
   position: relative;
-  /* padding: 30px; */
-  /* padding-top: 5px; */
   box-sizing: border-box;
   margin-bottom: 10px;
   overflow: hidden;
   height: 150px;
   color: var(--article-text-color);
-  /* background-color: var(--article-background-color); */
-
 
   transition: transform 0.2s ease, background-color 0.2s ease, color 0.05s ease;
   -moz-transition: transform 0.2s ease, background-color 0.2s ease,
@@ -165,9 +142,6 @@ section {
 }
 
 .article:hover {
-  /* color: rgb(255, 255, 0); */
-  /* background-color: rgb(58, 49, 13); */
-  /* color: black; */
   cursor: pointer;
 }
 
@@ -185,12 +159,13 @@ section {
   }
 
   .article:hover {
-    /* transform: translateY(-5px); */
-    /* color: rgb(255, 255, 0); */
-    /* background-color: rgb(58, 49, 13); */
     color: black;
-    background-color: rgb(199, 212, 255);
+    background-color: var(--article-hover-background-color);
     cursor: pointer;
+  }
+
+  .article:hover .date-badge {
+    color: var(--date-badge-hover-color);
   }
 }
 
@@ -198,10 +173,8 @@ section {
   line-height: 0px;
   font-size: 12px;
   font-family: "Courier New", Courier, monospace;
+  font-weight: 200;
   color: var(--date-badge-color);
-  /* background-color: rgba(77, 77, 77, 0.274); */
-  /* padding: 6px; */
-  /* border-radius: 10px; */
 
   transition: background-color 0.2s ease, color 0.05s ease;
   -moz-transition: background-color 0.2s ease, color 0.05s ease;
@@ -218,45 +191,3 @@ section {
   bottom: 10px;
   right: 10px;
 }
-
-.article:hover > .arrowIndicatorCircle {
-  /* border: 2px solid rgba(255, 255, 0, 0.644); */
-  /* border: 2px solid #0057FF; */
-}
-
-.article:hover .date-badge {
-  /* color: rgba(161, 131, 0, 0.705); */
-  /* background-color: rgba(255, 255, 0, 0.041); */
-}
-
-/* 
-.arrowIndicatorCircle {
-    position: absolute;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    border: 2px solid black;
-    bottom: 10px;
-    right: 10px;
-    transform: rotate(45deg);
-    transition: transform 0.3s ease;
-}
-
-.article:hover > .arrowIndicatorCircle {
-    background: radial-gradient(137.5% 137.5% at 70% 32.5%, 
-              rgba(0, 255, 25, 0.57) 0%, rgba(18, 178, 214, 0.46) 100%);
-    transform: rotate(-5deg);
-    border: rgb(16, 202, 16) solid 2px;
-    box-shadow: 0px 5px 15px rgba(17, 245, 25, 0.404);
-}
-
-.arrowIndicatorArrow {
-    position: absolute;
-    width: 20px;
-    transform: rotate(315deg);
-    margin: 0 auto;
-    bottom: 5px;
-    right: 5px;
-} 
-
-*/

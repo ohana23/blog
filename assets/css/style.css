@@ -8,8 +8,7 @@
   --p-color: black;
   --a-color: #0057FF;
   --article-text-color: black;
-  --article-background-color: #BBD2FF;
-  --article-hover-background-color: #BBD2FF;
+  --article-hover-text-color: #8f8f8f;
   --date-badge-color: #666666;
   --date-badge-hover-color: black;
   --blockquote-text-color: black;
@@ -24,7 +23,7 @@
     --p-color: #d2d2d2;
     --a-color: #BBD2FF;
     --article-text-color: white;
-    --article-hover-background-color: white;
+    --article-hover-text-color: #a3a2a2;
     --date-badge-color: #8d8d8d;
     --date-badge-hover-color: black;
     --blockquote-text-color: white;
@@ -50,24 +49,6 @@ section {
   margin: 0 auto;
 }
 
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes lift {
-  from {
-    transform: translateY(20px);
-  }
-  to {
-    transform: translateY(0px);
-  }
-}
-
 /* Other */
 
 .round-corners-8 {
@@ -85,17 +66,16 @@ section {
   color: #0057FF;
   background: var(--hr-color);
   border: 1px solid #0057FF;
-
   border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 
   font-family: Helvetica;
   font-size: 18px;
   text-align: left;
+
   padding-top: 7px;
   padding-left: 10px;
   padding-right: 12px;
-
-  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 
   transition: transform 0.2s ease, background-color 0.2s ease;
   -moz-transition: transform 0.2s ease, background-color 0.2s ease,
@@ -118,15 +98,14 @@ section {
 
 .articles-container {
   max-width: 1000px;
-  margin: 40px auto 10px auto;
+  margin: 20px auto 10px auto;
 }
 
 .article {
   position: relative;
   box-sizing: border-box;
-  margin-bottom: 10px;
-  overflow: hidden;
-  height: 150px;
+  /* margin-bottom: 10px; */
+  /* height: 150px; */
   color: var(--article-text-color);
 
   transition: transform 0.2s ease, background-color 0.2s ease, color 0.05s ease;
@@ -137,8 +116,7 @@ section {
   -o-transition: transform 0.2s ease, background-color 0.2s ease,
     color 0.05s ease, box-shadow 0.2s ease;
 
-  animation: fadein 0.8s cubic-bezier(0.23, 1, 0.32, 1),
-    lift 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: fadein 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .article:hover {
@@ -154,18 +132,17 @@ section {
   .article {
     width: 300px;
     height: 200px;
-    padding: 30px;
-    padding-top: 5px;
+    /* padding: 5px; */
+    /* padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 1px; */
+    /* padding-bottom: 2px; */
   }
 
   .article:hover {
-    color: black;
-    background-color: var(--article-hover-background-color);
+    /* background-color: var(--article-hover-background-color); */
+    color: var(--article-hover-text-color);
     cursor: pointer;
-  }
-
-  .article:hover .date-badge {
-    color: var(--date-badge-hover-color);
   }
 }
 
@@ -182,12 +159,20 @@ section {
   -o-transition: background-color 0.2s ease, color 0.05s ease;
 }
 
-.arrowIndicatorCircle {
-  position: absolute;
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  /* border: 2px solid white; */
-  bottom: 10px;
-  right: 10px;
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes lift {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0px);
+  }
 }

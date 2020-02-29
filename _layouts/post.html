@@ -28,25 +28,17 @@
     </section>
 
     <section class="section-post">
-      <!-- Back-to-home button -->
-      <a href="/">
-        <div class="back-home">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-            <polygon
-              points="3.828 9 9.899 2.929 8.485 1.515 0 10 .707 10.707 8.485 18.485 9.899 17.071 3.828 11 20 11 20 9 3.828 9"
-            />
-          </svg>
-        </div>
-      </a>
-      <!--  -->
 
       <h2>{{ page.title }}</h2>
-      <p style="line-height: 0; margin-top: -12px; margin-bottom: 30px;">
+
+      <p style="margin-top: -10px; margin-bottom: 0px;">
         {{ page.date | date_to_long_string: "ordinal", "US" }}
       </p>
-      <hr style="margin-bottom: 20px;" />
-      <!-- <textarea name="" id="" cols="80" rows="40">{{content}}</textarea> -->
+
+      <hr style="margin-bottom: 30px;" />
+
       {{ content }}
+    
     </section>
   </body>
 </html>

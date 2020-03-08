@@ -1,26 +1,21 @@
 h1 {
-  margin-top: 50px;
-  font-family: 'EB Garamond', Georgia, 'Times New Roman', Times, serif;
-  font-weight: bold;
-  font-size: 52px;
-  margin-bottom: -20px;
-
-  color: var(--h1-color);
 }
 
 h2 {
-  /* font-weight: bold; */
-  font-size: 32px;
 }
 
 h3 {
-  font-family: Helvetica, sans-serif;
-  /* font-weight: bold; */
-  font-size: 24px;
+
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+  color: var(--p-color);
+  line-height: 1.7;
 }
 
 strong {
-  color: black;
+
 }
 
 ul {
@@ -54,13 +49,6 @@ a {
 
 .section-post a:hover {
   text-decoration: underline;
-}
-
-p {
-  /* color: rgb(180, 180, 180); */
-  color: var(--p-color);
-  line-height: 1.7;
-  font-weight: normal;
 }
 
 blockquote p {

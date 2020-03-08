@@ -3,49 +3,14 @@ layout: default
 ---
 
 <body>
-
     <section>
-        <h1>Danny Ohana</h1>
-        <p style="max-width: 500px; font-size: 20px; line-height: 30px; margin-top: 25px;">
-            Developer at work 👨🏻‍💻<br>
-            Designer at heart 🤷🏻‍♂️
-        </p>
-        <button class="more-about-me" onclick="window.location.href = 'about';">
-            More about me
-            <div class="circle-arrow-right">
-                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="11" cy="11" r="11" fill="#0057FF"/>
-                    <path d="M15.5 10.134C16.1667 10.5189 16.1667 11.4811 15.5 11.866L9.5 15.3301C8.83333 15.715 8 15.2339 8 14.4641L8 7.53588C8 6.76608 8.83333 6.28496 9.5 6.66986L15.5 10.134Z" fill="#EAF1FF"/>
-                </svg>
-            </div>
-        </button>
-    </section>
-
-    <section style="margin-top: 100px;">
-        <h2 style="line-height: 10px;">Writing</h2>
-        <hr>
-
-        <div class="articles-container">
+        <!-- <div class="articles-container">
             {% for post in site.posts limit: 3 %}
                 {% assign date = post.date | date: '%m.%d.%Y' %}
                 <a href="{{ site.baseurl }}{{ post.url }}">
                     {% include article.html postTitle=post.title postDate=date %}
                 </a>
             {% endfor %}
-        </div>
-        
-        <!-- Center this and create a proper link for it. -->
-        <!-- <a href="/"><button class="secondary-button">View All Posts</button></a> -->
-
+        </div> -->
     </section>
-
-    <!-- <section>
-        <h2>About Me</h2>
-        <hr>
-
-        <p>
-            Right now I'm a Software Engineer at GEICO.
-        </p>
-    </section> -->
-
 </body>

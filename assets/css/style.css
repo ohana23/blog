@@ -23,6 +23,7 @@ body {
   font-family: 'Inter', sans-serif;
   text-rendering: optimizeLegibility;
   padding-bottom: 100px;
+  background-color: rgba(215, 223, 213, 0.089);
 }
 
 .home-main {
@@ -34,6 +35,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 52px;
   font-weight: 700;
+  line-height: 1;
 }
 
 .home-main .subtitle {

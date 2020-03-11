@@ -1,7 +1,7 @@
 :root {
   /* Signifies to the browser engine that the color scheme should use the user's preference based
     on their system color scheme. */
-  color-scheme: light dark;
+  /* color-scheme: light dark; */
 
   /* Color variables. */
   --h1-color: black;
@@ -21,7 +21,6 @@
 body {
   font-family: 'Inter', sans-serif;
   text-rendering: optimizeLegibility;
-  /* padding: 20px; */
 }
 
 hr {
@@ -63,7 +62,7 @@ nav {
 }
 
 nav .icon {
-  vertical-align: middle; 
+  vertical-align: middle;
   margin-top: -3px;
   margin-right: 2px;
 }
@@ -75,15 +74,14 @@ ul {
   list-style-type: none;
 }
 
-li {
+nav li {
   float: right;
 }
 
-li a {
+nav li a {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 18px;
   font-weight: 600;
-
   display: block;
   color: black;
   padding: 10px 10px;
@@ -104,6 +102,41 @@ li a {
 
   nav {
     position: fixed;
+    padding: 0;
     bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #EAF1FF;
+    backdrop-filter: blur(10px);
+    opacity: 0.75;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    margin: 0 10px;
+    width: 60px;
+    overflow: hidden;
+  }
+  
+  nav .icon {
+    margin: 0;
+  }
+
+  nav ul li a {
+    font-size: 12px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 2px;
   }
 }

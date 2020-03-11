@@ -94,6 +94,11 @@ nav li a {
 
 /* Mobile */
 @media (max-width: 980px) {
+  body {
+    padding-top: 70px;
+    padding-bottom: 100px;
+  }
+
   .logo {
     top: 15px;
     left: 15px;
@@ -106,15 +111,19 @@ nav li a {
     bottom: 0;
     left: 0;
     right: 0;
+
     background-color: #EAF1FF;
-    backdrop-filter: blur(10px);
-    opacity: 0.75;
+    background: rgba(234, 241, 255, 0.72);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(10px);
+
+    border-top: 1px solid rgba(234, 241, 255);
   }
   
   nav ul {
+    padding: 0;
     display: flex;
     flex-direction: row-reverse;
-    padding: 0;
     align-items: center;
     justify-content: space-evenly;
   }

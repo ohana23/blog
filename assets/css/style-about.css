@@ -18,15 +18,13 @@
 }
 
 .image-text-block {
-    /* background-color: lightgoldenrodyellow; */
     margin-top: 150px;
-    width: 100%;
-
     display: flex;
 }
 
 .image-subblock {
     width: 60%;
+    border-bottom: 2px solid black;
     /* background-color: lightsteelblue; */
     overflow: hidden;
 }
@@ -43,11 +41,12 @@
     }
 
     .image-subblock {
-        width: 100%;
+        width: 98%;
     }
 
     .text-subblock {
-        width: 100%;
-        padding: 0;
+        width: 95%;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }

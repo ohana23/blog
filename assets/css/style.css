@@ -11,6 +11,13 @@
   --blockquote-background-color: #eaf1ff;
 }
 
+::selection {
+  background: rgb(255, 255, 186); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: rgb(255, 255, 186); /* Gecko Browsers */
+}
+
 /* Switch colors for dark mode users. */
 @media (prefers-color-scheme: dark) {
   :root {

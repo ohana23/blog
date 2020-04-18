@@ -13,15 +13,6 @@ layout: default
         </div>
         <a href="/about" class="descriptive-link">More about me --></a>
 
-        <!-- <div class="articles-container">
-            {% for post in site.posts limit: 3 %}
-                {% assign date = post.date | date: '%m.%d.%Y' %}
-                <a href="{{ site.baseurl }}{{ post.url }}">
-                    {% include article.html postTitle=post.title postDate=date %}
-                </a>
-            {% endfor %}
-        </div> -->
-
         <!-- <img src="{{site.baseurl}}/assets/images/strawberries-test.jpeg" style="max-width: 350px;"> -->
     </section>
 
@@ -46,8 +37,16 @@ layout: default
                         <path d="M2 2l7.586 7.586"></path>
                         <circle cx="11" cy="11" r="2"></circle>
                     </svg><span style="padding-left: 10px;">Notes</span>
-                    <a style="vertical-align: middle; padding-left: 20px;"href="/notes" class="descriptive-link">View all notes --></a>
+                    <a style="vertical-align: middle; margin-left: 10px;"href="/notes" class="descriptive-link">View all notes --></a>
                 </div>
+            </div>
+            <div class="articles-container">
+                {% for post in site.posts limit: 3 %}
+                    {% assign date = post.date %}
+                    <a href="{{ site.baseurl }}{{ post.url }}">
+                        {% include article.html postTitle=post.title postSubtitle=post.subtitle postDate=date %}
+                    </a>
+                {% endfor %}
             </div>
         </div>
     </section>

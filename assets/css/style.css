@@ -75,15 +75,40 @@ body {
   line-height: 1;
 }
 
-hr {
-}
-
 section {
   max-width: 1000px;
   margin: 0 auto;
 }
 
+.notes-icon-lg {
+  vertical-align: middle;
+  margin-top: -15px;
+  margin-right: 2px;
+}
+
 /* Other */
+.article {
+  font-family: 'Inter', sans-serif;
+  margin-top: 30px;
+  color: black;
+}
+
+.article .date-badge {
+  color: #B9B9B9;
+}
+
+.article .title {
+  margin-top: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.article .subtitle {
+  margin-top: 10px;
+  color: #50545A;
+}
+
 
 /* Logo */
 
@@ -119,12 +144,6 @@ nav .icon {
   margin-right: 2px;
 }
 
-.notes-icon-lg {
-  vertical-align: middle;
-  margin-top: -15px;
-  margin-right: 2px;
-}
-
 ul {
   margin: 0;
   padding: 0;
@@ -134,6 +153,7 @@ ul {
 
 nav li {
   float: right;
+
 }
 
 nav li a {
@@ -226,5 +246,21 @@ nav li a {
     text-align: center;
     padding-top: 5px;
     padding-bottom: 2px;
+  }
+
+  .article {
+    font-size: 18px;
+  }
+  
+  .article .date-badge {
+    font-size: 12px;
+  }
+  
+  .article .title {
+    font-size: 20px;
+  }
+  
+  .article .subtitle {
+    font-size: 14px;
   }
 }

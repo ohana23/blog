@@ -1,5 +1,5 @@
 :root {
-  /* Signifies to the browser engine that the color scheme should use the user's preference based
+  /* Tells the browser engine that the color scheme should use the user's preference based
     on their system color scheme. */
   /* color-scheme: light dark; */
 
@@ -49,17 +49,30 @@ body {
   font-family: 'Inter', sans-serif;
   font-size: 18px;
   font-weight: 400;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 20px;
   max-width: 500px;
 }
 
-.home-main .more-about-me {
+.descriptive-link {
   font-family: 'Inter', sans-serif;
   font-weight: bold;
   font-size: 18px;
   margin-top: 10px;
   color: black;
+}
+
+.home-secondary {
+  margin: auto;
+  margin-top: 100px;
+  max-width: 500px;
+}
+
+.home-secondary .title{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1;
 }
 
 hr {
@@ -106,6 +119,12 @@ nav .icon {
   margin-right: 2px;
 }
 
+.notes-icon-lg {
+  vertical-align: middle;
+  margin-top: -15px;
+  margin-right: 2px;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -131,11 +150,27 @@ nav li a {
   stroke: #0057FF;
 }
 
-
 /* Mobile */
 @media (max-width: 980px) {
   body {
     padding-top: 70px;
+  }
+
+  .home-main .title {
+    font-size: 36px;
+  }
+  
+  .home-main .subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+  }
+
+  .home-secondary .title{
+    font-size: 32px;
+  }
+  
+  .descriptive-link {
+    font-size: 12px;
   }
 
   section {

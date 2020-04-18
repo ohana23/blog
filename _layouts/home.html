@@ -11,7 +11,7 @@ layout: default
             This is a summary of the about me page.
             This is a summary of the about me page.
         </div>
-        <a href="/about" class="more-about-me">More about me --></a>
+        <a href="/about" class="descriptive-link">More about me --></a>
 
         <!-- <div class="articles-container">
             {% for post in site.posts limit: 3 %}
@@ -23,5 +23,32 @@ layout: default
         </div> -->
 
         <!-- <img src="{{site.baseurl}}/assets/images/strawberries-test.jpeg" style="max-width: 350px;"> -->
+    </section>
+
+    <section class="home-secondary">
+        <div class="posts">
+            <div class="notes-header">
+                <div class="title">
+                    <svg class="notes-icon-lg"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="64"
+                        height="64"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="black"
+                        stroke-width="0.7"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-pen-tool"
+                    >
+                        <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                        <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                        <path d="M2 2l7.586 7.586"></path>
+                        <circle cx="11" cy="11" r="2"></circle>
+                    </svg><span style="padding-left: 10px;">Notes</span>
+                    <a style="vertical-align: middle; padding-left: 20px;"href="/notes" class="descriptive-link">View all notes --></a>
+                </div>
+            </div>
+        </div>
     </section>
 </body>

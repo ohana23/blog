@@ -4,21 +4,21 @@ layout: default
 
 <link rel="stylesheet" href="{{site.baseurl}}/assets/css/style-post.css"/>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/sparanoid/lightense-images@master/lightense.min.js"></script>
-
+<body>
     <section class="section-post">
-
       <div class="date-badge">
         {{ page.date | date_to_long_string: "ordinal", "US" }}
       </div>
       <div class="title">{{ page.title }}</div>
       <div class="subtitle">{{ page.subtitle }}</div>
-
       <hr/>
-
       {{ content }}
-    
     </section>
   </body>
+
+  <!-- <div style="position: absolute; width: 100%; height: 200px; background-color: black;"> -->
+
+  </div>
 </html>
 
 <script>

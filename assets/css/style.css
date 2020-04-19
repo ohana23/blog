@@ -61,6 +61,10 @@ body {
   color: black;
 }
 
+.descriptive-link:hover {
+  opacity: 0.5;
+}
+
 .home-secondary {
   margin: auto;
   margin-top: 100px;
@@ -155,7 +159,6 @@ ul {
 
 nav li {
   float: right;
-
 }
 
 nav li a {
@@ -165,6 +168,10 @@ nav li a {
   display: block;
   color: black;
   padding: 10px 10px;
+}
+
+nav li a:hover {
+  opacity: 0.5;
 }
 
 .nav-active {

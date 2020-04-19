@@ -12,6 +12,8 @@ I wanted to talk a little bit about charisma and how it relates to a seemingly u
 
 Off the top of my head I don’t remember who said it. But it’s certainly true in most of the negotiations I’ve seen or been a part of. 
 
+![test image](/assets/images/notion-test-2.png)
+
 In Israel, when I was haggling with a man in the market to buy a corn cob pipe, I didn’t really need it. So, he dropped the price maybe 150 shekels. 
 
 That’s just one example. 
@@ -21,6 +23,8 @@ The point is, caring less allows you to remain more confident in a negotiation. 
 I, on the other hand, was just looking for a gift. I didn’t care much whether or not I could buy that particular pipe. If it was too expensive, fine. I’d go to another shopkeeper and buy something from them. Perhaps a cheaper corn cob pipe. 
 
 Of course, this scenario comes with the caveat that the man in the market I haggled with could have easily been the one to care the least, so long as he figured that surely another customer would come by eventually and buy the pipe. 
+
+![test image](/assets/images/notion-test.png)
 
 But I had the upper hand simply because I believed that I cared less. Consciously or not. 
 

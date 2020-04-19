@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Leaders Care Less"
-subtitle: "When leaders care less, they can do more. Simply, by virtue of the fact that their inhibitions, their lack of confidence, their inability to speak up, would not not exist."
+subtitle: "When leaders care less, they can do more. Simply by virtue of the fact that their inhibitions, their lack of confidence, their inability to speak up, would not exist."
 date:   2020-01-04 20:21:43 -0500
 categories: Non-tech
 ---

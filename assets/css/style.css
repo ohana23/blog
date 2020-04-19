@@ -56,12 +56,23 @@ body {
   max-width: 500px;
 }
 
+.home-main .subtitle a {
+  color: var(--subtitle-color);
+  text-decoration: underline;
+  transition: 0.15s;
+}
+
+.home-main .subtitle a:hover {
+  color: var(--a-color);
+}
+
 .descriptive-link {
   font-family: 'Inter', sans-serif;
   font-weight: bold;
   font-size: 18px;
   margin-top: 10px;
   color: black;
+  transition: 0.15s;
 }
 
 .descriptive-link:hover {
@@ -174,6 +185,7 @@ nav li a {
   display: block;
   color: black;
   padding: 10px 10px;
+  transition: 0.15s;
 }
 
 nav li a:hover {

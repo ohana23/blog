@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "Leaders Care Less"
-subtitle: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores. "
+subtitle: "When leaders care less, they can do more. Simply, by virtue of the fact that their inhibitions, their lack of confidence, their inability to speak up, would not not exist."
 date:   2020-01-04 20:21:43 -0500
-categories: jekyll update
+categories: Non-tech
 ---
 
 I wanted to talk a little bit about charisma and how it relates to a seemingly unrelated quote I heard the other day. The quote went something along the lines of: 

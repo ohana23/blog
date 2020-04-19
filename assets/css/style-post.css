@@ -4,8 +4,13 @@
 }
 
 .section-post .date-badge {
-  color: #B9B9B9;
+  color: var(--subtitle-color);
   font-size: 14px;
+}
+
+.section-post .categories {
+  color: rgb(92, 92, 255);
+  font-weight: 700;
 }
 
 .section-post .title {
@@ -18,7 +23,9 @@
 }
 
 .section-post .subtitle {
+  color: var(--subtitle-color);
   font-size: 18px;
+  font-weight: 700;
 }
 
 img {
@@ -44,7 +51,6 @@ hr {
   }
 
   .section-post .date-badge {
-    color: #B9B9B9;
     font-size: 14px;
   }
   

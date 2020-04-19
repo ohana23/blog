@@ -6,9 +6,10 @@ layout: default
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/sparanoid/lightense-images@master/lightense.min.js"></script>
 <body>
     <section class="section-post">
-      <div class="date-badge">
+      <span class="date-badge">
         {{ page.date | date_to_long_string: "ordinal", "US" }}
-      </div>
+      </span>
+      <span>{{ page.categories }}</span>
       <div class="title">{{ page.title }}</div>
       <div class="subtitle">{{ page.subtitle }}</div>
       <hr/>

@@ -6,10 +6,7 @@ layout: default
     <section class="home-main">
         <div class="title">Danny Ohana</div>
         <div class="subtitle">
-            This is a summary of the about me page.
-            This is a summary of the about me page.
-            This is a summary of the about me page.
-            This is a summary of the about me page.
+            When you buy something using Apple Card, you get a percentage of your purchase back in Daily Cash. It’s real cash that goes right onto your Apple Cash card — not a month from now, but every day. There’s no limit to how much you can get, and you can use it however you like.
         </div>
         <a href="/about" class="descriptive-link">More about me --></a>
     </section>
@@ -42,7 +39,7 @@ layout: default
                 {% for post in site.posts limit: 3 %}
                     {% assign date = post.date %}
                     <a href="{{ site.baseurl }}{{ post.url }}">
-                        {% include article.html postTitle=post.title postSubtitle=post.subtitle postDate=date %}
+                        {% include article.html postTitle=post.title postSubtitle=post.subtitle postDate=date postCategories=post.categories%}
                     </a>
                 {% endfor %}
             </div>

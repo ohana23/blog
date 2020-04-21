@@ -9,11 +9,12 @@
 }
 
 .section-post .categories {
-  color: rgb(92, 92, 255);
+  color: var(--title-color);
   font-weight: 700;
 }
 
 .section-post .title {
+  color: var(--title-color);
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 52px;
   font-weight: 700;

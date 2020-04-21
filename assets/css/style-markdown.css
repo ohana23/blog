@@ -1,11 +1,13 @@
 h1 {
+  color: var(--title-color);
 }
 
 h2 {
+  color: var(--title-color);
 }
 
 h3 {
-
+  color: var(--title-color);
 }
 
 p {
@@ -21,11 +23,13 @@ strong {
 ul {
   padding-left: 17px;
   line-height: 1.7;
+  color: var(--title-color);
 }
 
 ol {
   padding-left: 17px;
   line-height: 1.7;
+  color: var(--title-color);
 }
 
 .footnote,
@@ -60,5 +64,5 @@ blockquote p {
   border-radius: 0px 5px 5px 0px;
   color: var(--blockquote-text-color);
   background-color: var(--blockquote-background-color);
-  border-left: 2px solid #0057FF;
+  border-left: 2px solid var(--a-color);
 }

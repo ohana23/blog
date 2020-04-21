@@ -9,6 +9,7 @@
     font-weight: 700;
     line-height: 1;
     margin-bottom: -80px;
+    color: var(--title-color);
 }
 
 .section-about .title .title-tag {

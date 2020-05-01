@@ -9,7 +9,7 @@
   --p-color: black;
   --a-color: #0057ff;
   --title-color: black;
-  --subtitle-color: rgb(145, 145, 145);
+  --subtitle-color: rgb(184, 184, 184);
   --blockquote-text-color: black;
   --blockquote-background-color: #eaf1ff;
   /* --mobile-nav-bg-color: #EAF1FF; */
@@ -28,7 +28,6 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --bg-color: #1E1B1B;
-    --bg-color: #233227;
     --h1-color: white;
     --p-color: white;
     --a-color: rgb(88, 144, 255);

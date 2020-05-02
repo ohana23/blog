@@ -28,7 +28,7 @@
     --p-color: rgb(221, 221, 221);
     --a-color: rgb(88, 144, 255);
     --title-color: white;
-    --subtitle-color: white;
+    /* --subtitle-color: rgb(224, 224, 224); */
     --blockquote-text-color: white;
     --blockquote-background-color: rgb(13, 44, 110);
     /* --mobile-nav-bg-color: ; */

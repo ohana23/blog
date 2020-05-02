@@ -97,11 +97,9 @@ pre, code {
 }
 code {
   padding: 3px;
-  /* border: 1px solid var(--code-text-color); */
 }
 pre {
   background-color: var(--code-bg-color);
-  /* border: 1px solid var(--code-text-color); */
   overflow: scroll;
   padding: 10px;
 }

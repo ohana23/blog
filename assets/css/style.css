@@ -15,13 +15,9 @@
   /* --mobile-nav-bg-color: #EAF1FF; */
   --mobile-nav-bg-color: none;
   --mobile-nav-border-color: rgba(234, 241, 255);
-}
-
-::selection {
-  background: rgb(255, 255, 186); /* WebKit/Blink Browsers */
-}
-::-moz-selection {
-  background: rgb(255, 255, 186); /* Gecko Browsers */
+  --selection-color: rgb(255, 255, 186);
+  --code-bg-color: rgb(255, 234, 225);
+  --code-text-color: red;
 }
 
 /* Switch colors for dark mode users. */
@@ -29,18 +25,27 @@
   :root {
     --bg-color: #1E1B1B;
     --h1-color: white;
-    --p-color: white;
+    --p-color: rgb(221, 221, 221);
     --a-color: rgb(88, 144, 255);
     --title-color: white;
-    /* --subtitle-color: rgba(255, 255, 255, 0.603); */
+    --subtitle-color: white;
     --blockquote-text-color: white;
     --blockquote-background-color: rgb(13, 44, 110);
     /* --mobile-nav-bg-color: ; */
     --mobile-nav-bg-color: none;
     --mobile-nav-border-color: var(--bg-color);
+    --selection-color: blue;
+    --code-bg-color: rgb(49, 51, 56);
+    --code-text-color: #ffffff;
   }
 }
 
+::selection {
+  background: var(--selection-color); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: var(--selection-color); /* Gecko Browsers */
+}
 
 body {
   font-family: 'Inter', sans-serif;

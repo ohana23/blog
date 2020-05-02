@@ -30,7 +30,7 @@ Nothing you haven’t heard before:
 
 1. **Wash your hands.** With soap preferably (more info below on why soap > sanitizer).
 2. **Don’t touch your face.** Eyes, ears and mouth especially. As far as we know, that’s how corona likes to get in.
-3. **Keep your distance.** [Don’t hang around large groups of people if you can help it](https://www.washingtonpost.com/graphics/2020/world/corona-simulator/).
+3. **Keep your distance.** [Don’t hang around large groups of people if you can help it.](https://www.washingtonpost.com/graphics/2020/world/corona-simulator/)
 
 Anything that isn’t in the list above is barely worth mentioning. If some solution sounds too good to be true, it probably is. That means if a family member or ill-informed news correspondent says they found a cure to corona (like turning on a blow-drier and pointing it up your sinuses), figure out a nice way to correct them... I know that’s easier said then done.
 

@@ -228,20 +228,20 @@ nav li a:hover {
   }
 
   .home-main .title {
-    font-size: 36px;
+    font-size: 38px;
   }
   
   .home-main .subtitle {
     font-family: 'Inter', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .home-secondary .title{
-    font-size: 32px;
+    font-size: 34px;
   }
   
   .descriptive-link {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   section {
@@ -299,18 +299,18 @@ nav li a:hover {
   }
 
   .article {
-    font-size: 18px;
-  }
-  
-  .article .date-badge {
-    font-size: 12px;
-  }
-  
-  .article .title {
     font-size: 20px;
   }
   
-  .article .subtitle {
+  .article .date-badge {
     font-size: 14px;
+  }
+  
+  .article .title {
+    font-size: 22px;
+  }
+  
+  .article .subtitle {
+    font-size: 16px;
   }
 }

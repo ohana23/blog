@@ -1,7 +1,7 @@
 :root {
   /* Tells the browser engine that the color scheme should use the user's preference based
     on their system color scheme. */
-  color-scheme: light dark;
+  /* color-scheme: light dark; */
 
   /* Color variables. */
   --bg-color: white;

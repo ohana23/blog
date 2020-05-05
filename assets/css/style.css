@@ -1,7 +1,7 @@
 :root {
   /* Tells the browser engine that the color scheme should use the user's preference based
     on their system color scheme. */
-  /* color-scheme: light dark; */
+  color-scheme: light dark;
 
   /* Color variables. */
   --bg-color: white;
@@ -12,11 +12,10 @@
   --subtitle-color: rgb(184, 184, 184);
   --blockquote-text-color: black;
   --blockquote-background-color: #eaf1ff;
-  /* --mobile-nav-bg-color: #EAF1FF; */
   --mobile-nav-bg-color: none;
   --mobile-nav-border-color: rgba(234, 241, 255);
   --selection-color: rgb(255, 255, 186);
-  --code-bg-color: rgb(255, 234, 225);
+  --code-bg-color: rgb(255, 240, 234);
   --code-text-color: red;
 }
 

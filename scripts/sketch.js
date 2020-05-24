@@ -28,7 +28,7 @@ function draw() {
     model(modelObj);
     pop();
 
-    angle += 0.02;
+    angle += 0.01;
 }
 
 function windowResized() {

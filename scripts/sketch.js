@@ -10,28 +10,37 @@ function setup() {
 }
 
 function draw() {
-    // background(0);
+    let r = random(0, 0.03)
     background(0, 0, 0, 0);
+    ambientLight(234, 241, 255);
 
-    // rectMode(TOP);
-    // noStroke();
-    stroke(0);
-    fill(0, 0, 255);
-    rotateX(pos * .01);
-    rotateX(-mouseY * 0.003);
-    rotateY(-mouseX * 0.003);
+    noStroke();
+    // fill(0, 0, 255);
+    // normalMaterial();
+    // rotateX(pos * .01);
+    // rotateX(-mouseY * 0.003);
+    // rotateX(angle);
+    // rotateY(-mouseX * 0.003);
+    // box(60, 60, 60);
+    push();
+    ambientMaterial(234, 241, 255);
+    rotateY(angle);
+    torus(80, 14, 50, 100);
+    pop();
+
+    fill(0);
     box(60, 60, 60);
 
-    angle += 0.07;
+    angle += 0.02 + r;
 }
 
-// function mouseWheel(event) {
-//     print(event.delta);
-//     //move the square according to the vertical scroll amount
-//     pos += event.delta;
-//     //uncomment to block page scrolling
-//     // return false;
-// }
+function mouseWheel(event) {
+    print(event.delta);
+    //move the square according to the vertical scroll amount
+    pos += event.delta;
+    //uncomment to block page scrolling
+    // return false;
+}
 
 function windowResized() {
     // cnv.position(windowWidth/2-30 ,70);

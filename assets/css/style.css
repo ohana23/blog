@@ -73,7 +73,7 @@ body {
   color: var(--subtitle-color);
   margin-top: 10px;
   margin-bottom: 20px;
-  max-width: 500px;
+  max-width: 440px;
 }
 
 .home-main .subtitle a {

@@ -7,11 +7,11 @@
   --bg-color: white;
   --h1-color: black;
   --p-color: black;
-  --a-color: #0057ff;
+  --a-color: rgb(0, 87, 255);
   --title-color: black;
   --subtitle-color: rgb(184, 184, 184);
   --blockquote-text-color: black;
-  --blockquote-background-color: #eaf1ff;
+  --blockquote-background-color: rgb(234, 241, 255);
   --mobile-nav-bg-color: none;
   --mobile-nav-border-color: rgba(234, 241, 255);
   --selection-color: rgb(255, 255, 186);

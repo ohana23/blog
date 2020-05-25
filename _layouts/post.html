@@ -21,6 +21,12 @@ layout: default
 </html>
 
 <script>
+  var imgs = document.getElementsByTagName("img");
+
+  for (let i = 0; i < imgs.length; i++) {
+      imgs[i].setAttribute('data-lightense-background', 'rgba(0, 0, 0, .30)');
+  }
+
   window.addEventListener('load', function () {
     Lightense('img');
   }, false);

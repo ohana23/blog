@@ -1,6 +1,7 @@
 let angle = 0;
 let cnv;
 let modelObj;
+let scaleVal = 0;
 
 function preload() {
     modelObj = loadModel('assets/NOVELO_EARTH.obj');
@@ -17,7 +18,7 @@ function draw() {
 
     noStroke();
 
-    scale(0.25);
+    scale(scaleVal);
     rotateY(angle);
     rotateX(9.6);
     rotateZ(6.4);
@@ -28,6 +29,7 @@ function draw() {
     model(modelObj);
     pop();
 
+    if (scaleVal <= 0.25) scaleVal += 0.03;
     angle += 0.01;
 }
 

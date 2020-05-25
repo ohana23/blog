@@ -243,6 +243,7 @@ nav li a:hover {
   cursor: pointer;
   outline: none;
   text-align: center;
+  /* Make this perfect */
 }
 
 /* Mobile */

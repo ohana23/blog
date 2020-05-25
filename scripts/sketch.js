@@ -23,7 +23,7 @@ function draw() {
     rotateZ(6.4);
     
     push();
-    translate(330, -400, 0);
+    translate(0, -400, 0);
     fill(0, 0, 255, 100);
     model(modelObj);
     pop();

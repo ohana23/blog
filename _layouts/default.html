@@ -136,8 +136,24 @@
     </nav>
 
     {{ content }}
+    
+    <div style="margin: 0 auto; margin-top: 80px; text-align: center;">
+      <button id="copyURLButton" onclick="copyCurrentURL()">Copy URL</button><br>
+      <input id="temporaryInput" type="text" readonly/>
+    </div>
   </body>
 </html>
+
+<script>
+  var temporaryInput = document.getElementById("temporaryInput");
+  temporaryInput.setAttribute('value', window.location.href);
+
+  function copyCurrentURL() {
+    temporaryInput.select();
+    document.execCommand("copy");
+    alert("Copied to clipboard: " + temporaryInput.value);
+  }
+</script>
 
 <script>
   var windowPath = window.location.pathname;

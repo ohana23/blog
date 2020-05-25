@@ -224,16 +224,25 @@ nav li a:hover {
 #copyURLButton {
   background: none;
   border: none;
+  border-radius: 10px;
   cursor: pointer;
-  color: blue;
+  color: var(--a-color);
+  transition: 0.15s;
+}
+
+#copyURLButton:hover {
+  background-color: var(--blockquote-background-color);
 }
 
 #temporaryInput {
-  max-width: 300px;
-  overflow: visible;
+  width: 280px;
   border: none;
+  background: none;
+  color: rgb(155, 155, 155);
+  text-overflow: ellipsis;
+  cursor: pointer;
+  outline: none;
   text-align: center;
-  color: lightgray;
 }
 
 /* Mobile */

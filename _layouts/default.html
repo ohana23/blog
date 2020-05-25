@@ -15,6 +15,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/addons/p5.dom.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/addons/p5.sound.min.js"></script>
 
+    <!-- Tippy -->
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/shift-away.css"/>
+
     <!-- GoogleFonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Sans+Pro:wght@400;600;700&display=swap"
@@ -138,9 +141,15 @@
     {{ content }}
     
     <div style="margin: 0 auto; margin-top: 80px; text-align: center;">
-      <button id="copyURLButton" onclick="copyCurrentURL()">Copy URL</button><br>
-      <input id="temporaryInput" type="text" readonly/>
+      <button id="copyURLButton" onclick="copyCurrentURL()" data-tippy-content="👍 Copied">
+        Copy URL<br>
+        <input id="temporaryInput" type="text" readonly/>
+        <!-- <textarea id="temporaryInput" cols="40" rows="1" readonly></textarea> -->
+      </button>
     </div>
+    
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
   </body>
 </html>
 
@@ -148,10 +157,16 @@
   var temporaryInput = document.getElementById("temporaryInput");
   temporaryInput.setAttribute('value', window.location.href);
 
+  tippy('[data-tippy-content]', {
+    animation: 'shift-away',
+    duration: 100,
+    trigger: 'click',
+  });
+
   function copyCurrentURL() {
     temporaryInput.select();
     document.execCommand("copy");
-    alert("Copied to clipboard: " + temporaryInput.value);
+    // alert("✅ Copied");
   }
 </script>
 

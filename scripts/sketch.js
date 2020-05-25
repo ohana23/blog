@@ -9,12 +9,11 @@ function preload() {
 
 function setup() {
     cnv = createCanvas(windowWidth, 300, WEBGL);
-    cnv.position(0, 80);
+    cnv.position(0, 80, 'fixed');
 }
 
 function draw() {
     background(0, 0, 0, 0);
-    // ambientLight(234, 241, 255);
 
     noStroke();
 
@@ -22,14 +21,15 @@ function draw() {
     rotateY(angle);
     rotateX(9.6);
     rotateZ(6.4);
+    
     push();
     translate(330, -400, 0);
-    // normalMaterial();
     fill(0, 0, 255, 100);
     model(modelObj);
     pop();
 
-    if (scaleVal <= 0.25) scaleVal += 0.03;
+    if (scaleVal <= 0.22) scaleVal += 0.03;
+
     angle += 0.01;
 }
 

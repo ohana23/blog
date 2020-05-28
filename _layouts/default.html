@@ -144,7 +144,6 @@
       <button id="copyURLButton" onclick="copyCurrentURL()" data-tippy-content="👍 Copied">
         Copy URL<br>
         <input id="temporaryInput" type="text" readonly/>
-        <!-- <textarea id="temporaryInput" cols="40" rows="1" readonly></textarea> -->
       </button>
     </div>
     
@@ -166,7 +165,6 @@
   function copyCurrentURL() {
     temporaryInput.select();
     document.execCommand("copy");
-    // alert("✅ Copied");
   }
 </script>
 

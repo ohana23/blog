@@ -7,7 +7,7 @@
     color: var(--title-color);
     font-size: 52px;
     font-weight: 700;
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
 }
 
 @media (max-width: 980px) {

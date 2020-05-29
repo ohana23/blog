@@ -15,7 +15,7 @@
 
 .section-post .title {
   color: var(--title-color);
-  font-family: 'Source Sans Pro', sans-serif;
+  /* font-family: 'Source Sans Pro', sans-serif; */
   font-size: 52px;
   font-weight: 700;
   line-height: 1;

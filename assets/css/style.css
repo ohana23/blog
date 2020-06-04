@@ -24,7 +24,7 @@
 /* Switch colors for dark mode users. */
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-color: #1E1B1B;
+    --bg-color: rgb(42, 43, 49);
     --h1-color: white;
     --p-color: rgb(221, 221, 221);
     --a-color: rgb(88, 144, 255);

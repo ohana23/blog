@@ -39,4 +39,4 @@ You finally look up and turn to the window. Outside, a bright hologram projected
 
 You stare at it till the screen goes to sleep, and then you look back up at Steve.
 
-"You bastard," you say under breath. And then you smile, "you damn genius bastard."
+"You bastard," you say under your breath. And then you smile, "you damn genius bastard."

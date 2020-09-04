@@ -76,11 +76,10 @@ section {
 
 /* Other */
 .article {
-  /* margin-bottom: 0px; */
   color: var(--p-color);
   font-weight: 500;
   padding: 10px;
-  padding-bottom: 22px;
+  margin-bottom: 20px;
   transition: 0.1s;
   border-radius: 5px;
 }

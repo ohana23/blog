@@ -6,7 +6,7 @@ layout: default
     <section class="home-secondary">
         <div class="posts">
             <div class="articles-container">
-                {% for post in site.posts limit: 3 %}
+                {% for post in site.posts %}
                     {% assign date = post.date %}
                     <a href="{{ site.baseurl }}{{ post.url }}">
                         {% include article.html postTitle=post.title postSubtitle=post.subtitle postDate=date postCategories=post.categories%}

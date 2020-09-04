@@ -3,38 +3,8 @@ layout: default
 ---
 
 <body>
-    <section class="home-main">
-        <div class="title">Danny Ohana</div>
-        <div class="subtitle">
-            A bit about me. After growing up in Florida, last year I graduated and moved to Washington D.C. I'm a designer who can code, working as a software engineer at GEICO. When away from a computer I like <a href="https://letterboxd.com/ohana23/films/" target="_blank">watching films</a>, <a href="https://www.goodreads.com/review/list/56718377-danny-ohana?shelf=read" target="_blank">reading</a> and, most recently, <a href="https://www.yelp.com/biz/earth-treks-crystal-city-arlington" target="_blank">climbing</a>.
-        </div>
-        <a href="/about" class="descriptive-link">More about me --></a>
-    </section>
-
     <section class="home-secondary">
         <div class="posts">
-            <div class="notes-header">
-                <div class="title">
-                    <svg class="notes-icon-lg"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="64"
-                        height="64"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="black"
-                        stroke-width="0.7"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="feather feather-pen-tool"
-                    >
-                        <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
-                        <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
-                        <path d="M2 2l7.586 7.586"></path>
-                        <circle cx="11" cy="11" r="2"></circle>
-                    </svg><span style="padding-left: 10px;">Notes</span>
-                    <a style="vertical-align: middle; margin-left: 10px;"href="/notes" class="descriptive-link">View all notes --></a>
-                </div>
-            </div>
             <div class="articles-container">
                 {% for post in site.posts limit: 3 %}
                     {% assign date = post.date %}
@@ -45,5 +15,4 @@ layout: default
             </div>
         </div>
     </section>
-    <script src="./scripts/sketch.js"></script>
 </body>

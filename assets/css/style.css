@@ -93,7 +93,6 @@ section {
 }
 
 .article .title {
-
   color: var(--title-color);
   font-size: 20px;
   font-weight: 700;
@@ -101,9 +100,7 @@ section {
 }
 
 .article .subtitle {
-
   font-weight: 500;
-
   color: var(--subtitle-color);
 }
 
@@ -119,24 +116,14 @@ section {
   animation:spin 12s linear infinite;
 }
 
-.logo-container path {
-  fill: var(--h1-color);
-}
-
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
-/* Logo */
-.logo {
-  /* position: absolute; */
-  /* margin-left: auto;
-  margin-right: auto; */
-
-  /* top: 30px;
-  left: 30px; */
-  /* right: 0; */
+.logo-container path {
+  fill: var(--h1-color);
 }
+
 
 .logo-name {
   position: absolute;
@@ -153,6 +140,12 @@ section {
 }
 
 /* Navigation */
+.links a {
+  font-weight: 500;
+  color: #717C92;
+}
+
+
 nav {
   padding-right: 10px;
   margin: 0 auto;
@@ -215,12 +208,6 @@ nav li a:hover {
     width: 40px;
     top: 30px;
     left: 15px;
-  }
-
-  .logo {
-    /* top: 35px;
-    left: 15px;
-    right: auto; */
   }
 
   nav {

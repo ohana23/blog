@@ -58,7 +58,7 @@ body {
 
 .home-secondary {
   margin: auto;
-  margin-top: 50px;
+  margin-top: 100px;
   max-width: 500px;
 }
 
@@ -111,9 +111,9 @@ section {
   height: 40px;
   width: 40px;
 
-  -webkit-animation:spin 12s linear infinite;
+  /* -webkit-animation:spin 12s linear infinite;
   -moz-animation:spin 12s linear infinite;
-  animation:spin 12s linear infinite;
+  animation:spin 12s linear infinite; */
 }
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
@@ -122,8 +122,8 @@ section {
 
 .logo-container path {
   fill: var(--h1-color);
+  fill: rgb(63, 209, 63);
 }
-
 
 .logo-name {
   position: absolute;
@@ -132,19 +132,25 @@ section {
   font-weight: 700;
   font-size: 18px;
   color: var(--h1-color);
+  color: rgb(63, 209, 63);
 }
-
 
 .logo:hover {
   cursor: pointer;
 }
 
 /* Navigation */
+.links {
+  position: absolute;
+  top: 40.5px;
+  left: 220px;
+  font-size: 18px;;
+}
 .links a {
   font-weight: 500;
   color: #717C92;
+  margin-right: 5px;
 }
-
 
 nav {
   padding-right: 10px;

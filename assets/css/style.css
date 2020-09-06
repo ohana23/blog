@@ -66,7 +66,6 @@ body {
   color: var(--title-color);
   font-size: 48px;
   font-weight: 600;
-  line-height: 1;
 }
 
 section {
@@ -78,8 +77,9 @@ section {
 .article {
   color: var(--p-color);
   font-weight: 500;
-  padding: 10px;
-  margin-bottom: 20px;
+  padding: 20px;
+  padding-left: 15px;
+
   transition: 0.1s;
   border-radius: 5px;
 }
@@ -93,17 +93,17 @@ section {
 }
 
 .article .title {
-  margin-top: 10px;
+
   color: var(--title-color);
   font-size: 20px;
   font-weight: 700;
-  line-height: 1.2;
+
 }
 
 .article .subtitle {
-  margin-top: 10px;
+
   font-weight: 500;
-  line-height: 1.4;
+
   color: var(--subtitle-color);
 }
 
@@ -117,6 +117,10 @@ section {
   -webkit-animation:spin 12s linear infinite;
   -moz-animation:spin 12s linear infinite;
   animation:spin 12s linear infinite;
+}
+
+.logo-container path {
+  fill: var(--h1-color);
 }
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
@@ -140,7 +144,7 @@ section {
   left: 80px;
   font-weight: 700;
   font-size: 18px;
-  color: black;
+  color: var(--h1-color);
 }
 
 

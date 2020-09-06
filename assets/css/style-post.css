@@ -18,7 +18,6 @@
   color: var(--title-color);
   font-size: 52px;
   font-weight: 700;
-  line-height: 1;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -43,10 +42,17 @@ img {
   margin-right: auto;
 }
 
+img:hover {
+  transform: translateY(-5px);
+}
+
 hr {
   margin-top: 20px;
-  /* border: 3px solid var(--a-color); */
   border-radius: 5px;
+}
+
+p strong {
+  color: var(--h1-color);
 }
 
 /* Mobile */

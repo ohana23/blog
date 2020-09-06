@@ -6,6 +6,8 @@ date:   2020-05-14 08:00:00 -0500
 categories: Thinking
 ---
 
+![Cover of How to Take Smart Notes](/assets/images/howToTakeSmartNotesCover.jpg)
+
 ## Frustration
 
 Around the dawn of 2019, I noticed that I had trouble communicating ideas that I believed I knew a lot about. "I know a lot about this," I believed. "Yet I can't seem to discuss or explain it clearly in conversations."
@@ -48,7 +50,3 @@ Writing is the greatest form of thinking. It is processing and gathering your th
 Just by writing, you lead yourself down different paths of thoughts. Thoughts then lead to questions, which lead to more thoughts and questions. All along you improve the breadth and depth of your understanding of the topic and you start to make connections with that topic and other topics, which in turn improves your memory of both.
 
 When I discovered writing, I thought it was the greatest thing since sliced bread.
-
-
-<!-- ![Cover of How To Take Smart Notes](https://m.media-amazon.com/images/I/41iVa0x-P-L.jpg) -->
-![Cover of How to Take Smart Notes](/assets/images/howToTakeSmartNotesCover.jpg)

@@ -1,16 +1,13 @@
 :root {
-  /* Tells the browser engine that the color scheme should use the user's preference based
-    on their system color scheme. */
-  /* color-scheme: light dark; */
-
   /* Color variables. */
-  --bg-color: white;
+  --bg-color: rgb(225, 233, 225);
   --h1-color: black;
   --p-color: black;
-  --a-color: rgb(0, 87, 255);
+  --a-color: rgb(63, 209, 63);
   --articleBgHover: #F6F6F6;
   --title-color: black;
   --subtitle-color: #717C92;
+  --projects-subtitle-color: rgb(63, 209, 63);
   --blockquote-text-color: black;
   --blockquote-background-color: rgb(234, 241, 255);
   --mobile-nav-bg-color: none;
@@ -26,17 +23,17 @@
     --bg-color: rgb(42, 43, 49);
     --h1-color: white;
     --p-color: rgb(221, 221, 221);
-    --a-color: rgb(88, 144, 255);
+    --a-color: rgb(63, 209, 63);
     --articleBgHover: rgb(54, 65, 77);
     /* --articleBorderHover: rgb(100, 190, 100); */
     --title-color: white;
     --subtitle-color: rgb(224, 224, 224);
+    /* --projects-subtitle-color: #6c7ca0; */
     --blockquote-text-color: white;
     --blockquote-background-color: rgb(13, 44, 110);
-    /* --mobile-nav-bg-color: ; */
     --mobile-nav-bg-color: none;
     --mobile-nav-border-color: var(--bg-color);
-    --selection-color: blue;
+    /* --selection-color: blue; */
     --code-bg-color: rgb(49, 51, 56);
     --code-text-color: #ffffff;
   }
@@ -96,12 +93,14 @@ section {
   color: var(--title-color);
   font-size: 20px;
   font-weight: 700;
-
+  line-height: 1.5;
+  /* margin-bottom: 10px; */
 }
 
 .article .subtitle {
   font-weight: 500;
   color: var(--subtitle-color);
+  line-height: 1.5;
 }
 
 .logo-container {
@@ -150,6 +149,9 @@ section {
   font-weight: 500;
   color: #717C92;
   margin-right: 5px;
+}
+.links a:hover {
+  color: rgb(63, 209, 63);
 }
 
 nav {

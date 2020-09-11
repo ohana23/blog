@@ -14,6 +14,8 @@ h3 {
 
 p {
   font-family: 'Inter', sans-serif;
+  font-family: 'Martel Sans', sans-serif;
+  font-weight: 600;
   color: var(--p-color);
   line-height: 1.7;
 }

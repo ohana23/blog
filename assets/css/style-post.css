@@ -1,6 +1,7 @@
 .section-post {
   max-width: 650px;
-  margin-top: 150px;
+  /* margin-top: 150px; */
+  padding-top: 100px;
 }
 
 .section-post .date-badge {

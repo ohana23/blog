@@ -4,7 +4,7 @@
   --h1-color: black;
   --p-color: black;
   --a-color: rgb(63, 209, 63);
-  --articleBgHover: #F6F6F6;
+  --articleBgHover: #d0d8ce;
   --title-color: black;
   --subtitle-color: #717C92;
   --projects-subtitle-color: rgb(63, 209, 63);
@@ -20,11 +20,11 @@
 /* Switch colors for dark mode users. */
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-color: rgb(42, 43, 49);
+    --bg-color: rgb(46, 51, 46);
     --h1-color: white;
     --p-color: rgb(221, 221, 221);
     --a-color: rgb(63, 209, 63);
-    --articleBgHover: rgb(54, 65, 77);
+    --articleBgHover: rgb(75, 85, 75);
     /* --articleBorderHover: rgb(100, 190, 100); */
     --title-color: white;
     --subtitle-color: rgb(224, 224, 224);
@@ -48,6 +48,7 @@
 
 body {
   font-family: 'Inter', sans-serif;
+  /* font-family: 'Martel Sans', sans-serif; */
   text-rendering: optimizeLegibility;
   padding-bottom: 100px;
   background-color: var(--bg-color);
@@ -56,7 +57,7 @@ body {
 .home-secondary {
   margin: auto;
   margin-top: 100px;
-  max-width: 500px;
+  max-width: 700px;
 }
 
 .home-secondary .title {
@@ -93,8 +94,7 @@ section {
   color: var(--title-color);
   font-size: 20px;
   font-weight: 700;
-  line-height: 1.5;
-  /* margin-bottom: 10px; */
+  line-height: 1.3;
 }
 
 .article .subtitle {
@@ -199,11 +199,11 @@ nav li a:hover {
 /* Mobile */
 @media (max-width: 980px) {
   body {
-    padding-top: 70px;
+    /* padding-top: 40px; */
   }
 
   .home-secondary .title{
-    font-size: 34px;
+    /* font-size: 34px; */
   }
 
   section {
@@ -262,18 +262,18 @@ nav li a:hover {
   }
 
   .article {
-    font-size: 20px;
+    /* font-size: 20px; */
   }
   
   .article .date-badge {
-    font-size: 14px;
+    /* font-size: 14px; */
   }
   
   .article .title {
-    font-size: 22px;
+    /* font-size: 22px; */
   }
   
   .article .subtitle {
-    font-size: 16px;
+    /* font-size: 16px; */
   }
 }

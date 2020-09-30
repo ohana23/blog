@@ -24,10 +24,10 @@
 }
 
 .project-description {
-    font-weight: 600;
+    /* font-weight: 600; */
     line-height: 1.5;
     font-size: 18px;
-    font-family: 'Martel Sans', sans-serif;
+    /* font-family: 'Martel Sans', sans-serif; */
     color: var(--p-color);
 }
 

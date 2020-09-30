@@ -14,8 +14,8 @@ h3 {
 
 p {
   font-family: 'Inter', sans-serif;
-  font-family: 'Martel Sans', sans-serif;
-  font-weight: 600;
+  /* font-family: 'Martel Sans', sans-serif; */
+  /* font-weight: 600; */
   color: var(--p-color);
   line-height: 1.7;
 }
@@ -45,10 +45,6 @@ ol {
 a {
   color: var(--a-color);
   text-decoration: none;
-}
-
-.section-post a:hover {
-  text-decoration: underline;
 }
 
 blockquote p {

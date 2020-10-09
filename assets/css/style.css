@@ -1,11 +1,10 @@
 :root {
   /* Color variables. */
-  --bg-color: rgb(225, 233, 225);
+  --bg-color: rgb(251, 244, 239);
   --h1-color: black;
   --p-color: black;
   --a-color: rgb(63, 90, 209);
-  --articleBgHover: #d0d8ce;
-  --title-color: black;
+  --articleBgHover: #e6e6e6;
   --subtitle-color: #717C92;
   --projects-subtitle-color: rgb(77, 175, 255);
   --blockquote-text-color: black;
@@ -15,6 +14,8 @@
   --selection-color: rgb(255, 255, 186);
   --code-bg-color: rgb(255, 240, 234);
   --code-text-color: red;
+  --modal-bg-color: rgba(170, 170, 170, .15);
+  --soft-blue: rgb(62, 83, 219);
 }
 
 /* Switch colors for dark mode users. */
@@ -26,16 +27,15 @@
     --a-color: rgb(255, 255, 255);
     --articleBgHover: rgb(59, 62, 73);
     /* --articleBorderHover: rgb(100, 190, 100); */
-    --title-color: white;
     --subtitle-color: rgb(224, 224, 224);
     /* --projects-subtitle-color: #6c7ca0; */
     --blockquote-text-color: white;
     --blockquote-background-color: rgb(13, 44, 110);
     --mobile-nav-bg-color: none;
     --mobile-nav-border-color: var(--bg-color);
-    /* --selection-color: blue; */
     --code-bg-color: rgb(49, 51, 56);
     --code-text-color: #ffffff;
+    --modal-bg-color: rgba(255, 255, 255, .15);
   }
 }
 
@@ -48,10 +48,111 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  /* font-family: 'Martel Sans', sans-serif; */
   text-rendering: optimizeLegibility;
   padding-bottom: 100px;
   background-color: var(--bg-color);
+  /* overflow: hidden; */
+}
+
+.main-buttons {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.main-buttons > .main-btn {
+  margin: 0 auto;
+  width: 47%;
+  border-radius: 2px;
+  /* border: 2.5px solid var(--h1-color); */
+  background-color: var(--articleBgHover);
+  padding: 15px;
+  box-sizing: border-box;
+  color: var(--h1-color);
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.1s;
+}
+
+.main-btn:hover {
+  /* border: 2.5px dotted var(--soft-blue); */
+  /* color: var(--soft-blue); */
+  color: white;
+  background-color: var(--soft-blue);
+  cursor: pointer;
+}
+
+.main-btn > .keyboard-cmd {
+  display: none;
+}
+
+.keyboard-cmd {
+  background-color: #144878;
+  color: #2479EB;
+  margin-top: 5px;
+  display: inline-flex;
+  padding-left: 3px;
+  padding-right: 3px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.modal {
+  position: fixed;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  width: 700px;
+  height: 70%;
+  overflow: scroll;
+  top: 0;
+  margin-top: 100px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  box-sizing: border-box;
+  border-radius: 7px;
+  box-shadow: 0px 20px 50px #8091914b;
+  transition: 2s;
+  display: none;
+  opacity: 0;
+}
+
+.opacityOn {
+  display: block;
+  opacity: 1;
+}
+
+.modal-top {
+  position: sticky;
+  top: 0;
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  background-color: #8091914b;
+  height: 57px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.close-modal-btn > .keyboard-cmd {
+  margin: 0 auto;
+  background-color: #144878;
+  transition: 0.03;
+}
+
+.close-modal-btn > .keyboard-cmd:hover {
+  background-color: #0c4475;
+  cursor: pointer;
+}
+
+.modal-title {
+  margin-top: 0px;
+  font-size: 25px;
+  color: var(--h1-color);
+  font-weight: 700;
+  float: left;
+}
+
+.close-modal-btn {
+  float: right;
 }
 
 .home-secondary {
@@ -73,34 +174,41 @@ section {
 
 /* Other */
 .article {
-  color: var(--p-color);
   font-weight: 500;
   padding: 20px;
   padding-left: 15px;
 
   transition: 0.1s;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 .article:hover {
-  background-color: var(--articleBgHover);
+  /* background-color: var(--soft-blue); */
 }
 
 .article .date-badge {
-  color: var(--subtitle-color);
+  color: var(--bg-color);
 }
 
 .article .title {
-  color: var(--title-color);
+  color: var(--h1-color);
   font-size: 20px;
   font-weight: 700;
   line-height: 1.3;
+}
+
+.article:hover > .title {
+  color: var(--soft-blue);
 }
 
 .article .subtitle {
   font-weight: 500;
   color: var(--subtitle-color);
   line-height: 1.5;
+}
+
+.article:hover > .subtitle {
+  /* color: black; */
 }
 
 .logo-container {
@@ -110,9 +218,9 @@ section {
   height: 40px;
   width: 40px;
 
-  /* -webkit-animation:spin 12s linear infinite;
+  -webkit-animation:spin 12s linear infinite;
   -moz-animation:spin 12s linear infinite;
-  animation:spin 12s linear infinite; */
+  animation:spin 12s linear infinite;
 }
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
@@ -120,8 +228,8 @@ section {
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 .logo-container path {
-  fill: var(--h1-color);
-  fill: rgb(63, 209, 63);
+  fill: var(--soft-blue);
+  /* fill: rgb(63, 209, 63); */
 }
 
 .logo-name {
@@ -130,8 +238,8 @@ section {
   left: 80px;
   font-weight: 700;
   font-size: 18px;
-  color: var(--h1-color);
-  color: rgb(63, 209, 63);
+  color: var(--soft-blue);
+  /* color: rgb(63, 209, 63); */
 }
 
 .logo:hover {
@@ -151,7 +259,7 @@ section {
   margin-right: 5px;
 }
 .links a:hover {
-  color: rgb(63, 209, 63);
+  color: var(--h1-color)
 }
 
 nav {
@@ -196,6 +304,36 @@ nav li a:hover {
   stroke: var(--a-color) !important;
 }
 
+.projects {
+  padding: 20px;
+  /* padding-top: 10px; */
+  /* max-width: 700px; */
+  color: var(--h1-color);
+}
+
+.project {
+  margin-bottom: 30px;
+}
+
+.project-title {
+  font-weight: 700;
+  margin-bottom: 3px;
+  font-size: 18px;
+}
+
+.project-role {
+  font-weight: 700;
+  color: var(--projects-subtitle-color);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.project-description {
+  line-height: 1.5;
+  font-size: 18px;
+  color: var(--p-color);
+}
+
 /* Mobile */
 @media (max-width: 980px) {
   body {
@@ -209,6 +347,11 @@ nav li a:hover {
   section {
     padding-left: 5px;
     padding-right: 5px;
+  }
+
+  .modal {
+    width: 95vw;
+    padding-top: 0px;
   }
 
   .logo-container {
@@ -275,5 +418,21 @@ nav li a:hover {
   
   .article .subtitle {
     /* font-size: 16px; */
+  }
+
+  .projects {
+    padding: 0px;
+  }
+
+  .project-title {
+    font-size: 16px;
+  }
+
+  .project-role {
+    font-size: 16px;
+  }
+
+  .project-description {
+    font-size: 16px;
   }
 }

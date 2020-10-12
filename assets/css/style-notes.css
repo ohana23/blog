@@ -4,7 +4,7 @@
 }
 
 .section-notes .section-title {
-    color: var(--title-color);
+    color: var(--h1-color);
     font-size: 52px;
     font-weight: 700;
     /* font-family: 'Source Sans Pro', sans-serif; */

@@ -4,17 +4,15 @@
 }
 
 .section-about .title {
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-size: 52px;
     font-weight: 700;
     line-height: 1;
     margin-bottom: -80px;
-    color: var(--title-color);
+    color: var(--h1-color);
 }
 
 .section-about .title .title-tag {
     font-size: 15px;
-    /* font-weight: 600; */
     color: rgb(53, 118, 248);
 }
 

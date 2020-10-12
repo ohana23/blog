@@ -5,10 +5,10 @@ layout: default
 <body>
     <section class="home-secondary">
         <div class="main-buttons">
-            <div class="main-btn" id="about-btn">
-                About<br>
+            <div class="main-btn" id="posts-btn">
+                Posts<br>
                 <div class="keyboard-cmd">
-                    ⌘A
+                    ⌘U
                 </div>
             </div>
             <div class="main-btn" id="projects-btn">
@@ -17,86 +17,118 @@ layout: default
                     ⌘P
                 </div>
             </div>
+            <div class="main-btn" id="about-btn">
+                About<br>
+                <div class="keyboard-cmd">
+                    ⌘A
+                </div>
+            </div>
         </div>
 
-        <div class="posts">
+        <div class="posts" id="posts">
             <div class="articles-container">
                 {% for post in site.posts %}
-                    {% assign date = post.date %}
-                    <a href="{{ site.baseurl }}{{ post.url }}">
-                        {% include article.html postTitle=post.title postSubtitle=post.subtitle postDate=date postCategories=post.categories%}
-                    </a>
+                {% assign date = post.date %}
+                <a href="{{ site.baseurl }}{{ post.url }}">
+                    {% include article.html postTitle=post.title postSubtitle=post.subtitle postDate=date postCategories=post.categories%}
+                </a>
                 {% endfor %}
             </div>
+        </div>
 
-            <div class="modal" id="modal">
-                <div class="modal-top">
-                    <div class="modal-title">Projects</div>
-                    <span class="close-modal-btn">
-                        <div class="keyboard-cmd">esc</div>
-                    </span>
+        <div class="projects" id="projects">
+            <div class="project">
+                <div class="title">
+                    SportAI <span class="project-role">Product Designer</span>
                 </div>
-
-                <section class="projects">
-                    <div class="project">
-                        <div class="project-title">
-                            SportAI <span class="project-role">Product Designer</span>
-                        </div>
-                        <div class="project-description">
-                            A fantasy sports analytics app
-                        </div>
-                    </div>
-            
-                    <div class="project">
-                        <div class="project-title">
-                            GEICO <span class="project-role">Software Engineer</span>
-                        </div>
-                        <div class="project-description">
-                            Improving the Report a Claim flow
-                        </div>
-                    </div>
-            
-                    <div class="project">
-                        <div class="project-title">
-                            React Udacity Nanodegree Apps <span class="project-role">React & JavaScript Developer</span>
-                        </div>
-                        <div class="project-description">
-                            A series of apps I created in order to learn React, React Native, and Redux
-                        </div>
-                    </div>
-            
-                    <div class="project">
-                        <div class="project-title">
-                            Augmented Reality Product Demos <span class="project-role">Product Designer & Unity Developer</span>
-                        </div>
-                        <div class="project-description">
-                            My team’s client sold large machines that were too large to ship and demo to customers and too complex to train new technicians with traditional manuals. We created an AR environment in which the client could use a HoloLens to create demos of the machine and produce interactive training guides for technicians. I led the UX discussions and helped code the frontend components.
-                        </div>
-                    </div>
-            
-                    <div class="project">
-                        <div class="project-title">
-                            GoWith <span class="project-role">Product Designer & Swift Developer</span>
-                        </div>
-                        <div class="project-description">
-                            An app to make travel more data-informed and social
-                        </div>
-                    </div>
-                </section>
+                <div class="subtitle">
+                    A fantasy sports analytics app
+                </div>
             </div>
+            <div class="project">
+                <div class="title">
+                    GEICO <span class="project-role">Software Engineer</span>
+                </div>
+                <div class="subtitle">
+                    Improving the Report a Claim flow
+                </div>
+            </div>
+            <div class="project">
+                <div class="title">
+                    React Udacity Nanodegree Apps <span class="project-role">React & JavaScript Developer</span>
+                </div>
+                <div class="subtitle">
+                    A series of apps I created in order to learn React, React Native, and Redux
+                </div>
+            </div>
+            <div class="project">
+                <div class="title">
+                    Augmented Reality Product Demos <span class="project-role">Product Designer & Unity
+                        Developer</span>
+                </div>
+                <div class="subtitle">
+                    My team’s client sold large machines that were too large to ship and demo to customers and too
+                    complex to train new technicians with traditional manuals. We created an AR environment in which
+                    the client could use a HoloLens to create demos of the machine and produce interactive training
+                    guides for technicians. I led the UX discussions and helped code the frontend components.
+                </div>
+            </div>
+            <div class="project">
+                <div class="title">
+                    GoWith <span class="project-role">Product Designer & Swift Developer</span>
+                </div>
+                <div class="subtitle">
+                    An app to make travel more data-informed and social
+                </div>
+            </div>
+        </div>
         </div>
     </section>
 </body>
 
 <script>
-    function openProjectsModal() {
-        var modal = document.getElementById('modal');
-        console.log(modal);
-        modal.style.display = 'block';
-        // modal.style.opacity = '1';
-        modal.classList.add('opacityOn');
+    // Buttons
+    var projectsBtn = document.getElementById('projects-btn');
+    // var aboutBtn = document.getElementById('about-btn');
+    var postsBtn = document.getElementById('posts-btn');
+
+    // Views
+    var postsView = document.getElementById('posts');
+    var projectsView = document.getElementById('projects');
+    // var about = document.getElementById('about');
+    
+    // Add click event listeners to each button.
+    projectsBtn.addEventListener('click', () => {
+        toggleActive('projects', projectsView);
+    });
+    postsBtn.addEventListener('click', () => {
+        toggleActive('posts', postsView);
+    });
+    // aboutBtn.addEventListener('click', () => {
+    //     toggleActive(aboutView);
+    // });
+    
+    function toggleActive(viewName, view) {
+        // Get the view's CSS-created display value.
+        var isSelectedViewDisplayed = window.getComputedStyle(view, null).display === 'none'
+            ? false
+            : true;
+
+        // If the view is already displayed, do nothing.
+        // Otherwise, display it and hide the others.
+        isSelectedViewDisplayed ? null : show(view);
+
+        // Toggle the other views.
+        viewName === 'projects' 
+            ? hide(postsView)
+            : hide(projectsView);
     }
 
-    var projectsButton = document.getElementById('projects-btn');
-    projectsButton.addEventListener("click", openProjectsModal);
+    function show(view) {
+        view.style.display = 'block';
+    }
+
+    function hide(view) {
+        view.style.display = 'none';
+    }
 </script>

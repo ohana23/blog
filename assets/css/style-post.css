@@ -11,12 +11,12 @@
 }
 
 .section-post .categories {
-  color: var(--title-color);
+  color: var(--h1-color);
   font-weight: 700;
 }
 
 .section-post .title {
-  color: var(--title-color);
+  color: var(--h1-color);
   font-size: 52px;
   font-weight: 700;
   margin-top: 20px;

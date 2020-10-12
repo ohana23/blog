@@ -1,14 +1,14 @@
 h1 {
-  color: var(--title-color);
+  color: var(--h1-color);
 }
 
 h2 {
-  color: var(--title-color);
+  color: var(--h1-color);
   font-size: 30px;
 }
 
 h3 {
-  color: var(--title-color);
+  color: var(--h1-color);
 }
 
 p {
@@ -20,13 +20,13 @@ p {
 ul {
   padding-left: 17px;
   line-height: 1.7;
-  color: var(--title-color);
+  color: var(--h1-color);
 }
 
 ol {
   padding-left: 17px;
   line-height: 1.7;
-  color: var(--title-color);
+  color: var(--h1-color);
 }
 
 .footnote,

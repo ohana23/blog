@@ -25,10 +25,6 @@
 </head>
 
 <body>
-
-  <div class="banner-message", id="banner-message">
-    Internet Explorer isn't fully supported by this site. Try another browser.
-  </div>
   <a href="/">
     <div class="logo-and-name">
       <div class="logo-container">
@@ -40,11 +36,13 @@
             d="M35 20C33.0302 20 31.0796 20.388 29.2597 21.1418C27.4399 21.8956 25.7863 23.0005 24.3934 24.3934C23.0005 25.7863 21.8956 27.4399 21.1418 29.2598C20.388 31.0796 20 33.0302 20 35C20 36.9698 20.388 38.9204 21.1418 40.7403C21.8956 42.5601 23.0005 44.2137 24.3934 45.6066C25.7863 46.9995 27.4399 48.1044 29.2598 48.8582C31.0796 49.612 33.0302 50 35 50L35 35L35 20Z"
             fill="black" />
         </svg>
-
       </div>
       <div class="logo-name">Daniel Ohana</div>
     </div>
   </a>
+  <div class="banner-message", id="banner-message">
+    Internet Explorer isn't fully supported by this site. Try another browser.
+  </div>
   {{ content }}
 </body>
 
@@ -58,18 +56,14 @@
       userAgentString.indexOf("MSIE") > -1 ||
       userAgentString.indexOf("rv:") > -1;
 
-               // Detect Safari 
-               let safariAgent =  
-                userAgentString.indexOf("Safari") > -1; 
-
     console.log(IExplorerAgent)
-    return safariAgent;
+    return IExplorerAgent;
   }
 
   if (isUserInternetExplorer()) {
     var bannerMessage = document.getElementById('banner-message');
 
-    bannerMessage.style.opacity = 1;
+    bannerMessage.style.display = 'block';
   }
 
 </script>

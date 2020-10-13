@@ -32,6 +32,7 @@
     --mobile-nav-border-color: var(--bg-color);
     --code-bg-color: rgb(49, 51, 56);
     --code-text-color: #ffffff;
+    --soft-blue: rgb(0, 119, 255);
   }
 }
 
@@ -53,28 +54,30 @@ body {
 .main-buttons {
   margin-bottom: 20px;
   display: flex;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none;
 }
 
 .main-buttons > .main-btn {
-  /* margin: 0 auto; */
   margin: 5px;
   width: 47%;
   border-radius: 2px;
-  border: 2px solid black;
+  border: 2px solid var(--h1-color);
   padding: 15px;
-  box-sizing: border-box;
-  color: black;
+  color: var(--h1-color);
   font-size: 18px;
   font-weight: bold;
   transition: 0.1s;
 }
 
-
 .main-btn:hover {
-  color: white;
+  color: var(--h1-color);
   background-color: var(--soft-blue);
   cursor: pointer;
-  /* font-size: 30px; */
 }
 
 .main-btn:active {
@@ -109,7 +112,7 @@ body {
 }
 
 .projects {
-  display: none;
+  transition: ease 0.3s;
 }
 
 .project {
@@ -128,7 +131,21 @@ section {
 }
 
 .posts {
-  /* display: none; */
+  transition: ease 0.3s;
+}
+
+.inactive-view {
+  transform: translateY(50px);
+  opacity: 0;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+.active-view {
+  opacity: 1;
+  position: absolute;
+  max-width: 700px;
 }
 
 /* Other */
@@ -225,6 +242,10 @@ section {
     width: 40px;
     top: 30px;
     left: 15px;
+  }
+
+  .logo-name {
+    left: 65px;
   }
 
   .main-buttons > .main-btn {

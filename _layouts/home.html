@@ -25,7 +25,7 @@ layout: default
             </div>
         </div>
 
-        <div class="posts" id="posts">
+        <div class="posts active-view" id="posts">
             <div class="articles-container">
                 {% for post in site.posts %}
                 {% assign date = post.date %}
@@ -36,7 +36,7 @@ layout: default
             </div>
         </div>
 
-        <div class="projects" id="projects">
+        <div class="projects inactive-view" id="projects">
             <div class="project">
                 <div class="title">
                     SportAI <span class="project-role">Product Designer</span>
@@ -96,7 +96,7 @@ layout: default
     var postsView = document.getElementById('posts');
     var projectsView = document.getElementById('projects');
     // var about = document.getElementById('about');
-    
+
     // Add click event listeners to each button.
     projectsBtn.addEventListener('click', () => {
         toggleActive('projects', projectsView);
@@ -107,28 +107,39 @@ layout: default
     // aboutBtn.addEventListener('click', () => {
     //     toggleActive(aboutView);
     // });
-    
+
     function toggleActive(viewName, view) {
         // Get the view's CSS-created display value.
-        var isSelectedViewDisplayed = window.getComputedStyle(view, null).display === 'none'
-            ? false
-            : true;
+        // var isSelectedViewDisplayed = window.getComputedStyle(view, null).display === 'none'
+        //     ? false
+        //     : true;
+
+        var isSelectedViewActive = view.classList.contains('active-view')
 
         // If the view is already displayed, do nothing.
         // Otherwise, display it and hide the others.
-        isSelectedViewDisplayed ? null : show(view);
+        isSelectedViewActive ? null : show(viewName, view);
+        // hide(view);
+        // view.classList.contains('active-vew') ? show(view) : hide(view)
 
         // Toggle the other views.
-        viewName === 'projects' 
-            ? hide(postsView)
-            : hide(projectsView);
+        // viewName === 'projects' 
+        //     ? hide(postsView)
+        //     : hide(projectsView);
     }
 
-    function show(view) {
-        view.style.display = 'block';
+    function show(viewName, view) {
+        view.classList.remove('inactive-view');
+        view.classList.add('active-view')
+
+        // Toggle the other views.
+        viewName === 'projects'
+            ? hide(viewName, postsView)
+            : hide(viewName, projectsView);
     }
 
-    function hide(view) {
-        view.style.display = 'none';
+    function hide(viewName, view) {
+        view.classList.remove('active-view');
+        view.classList.add('inactive-view');
     }
 </script>

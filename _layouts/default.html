@@ -56,14 +56,12 @@
       userAgentString.indexOf("MSIE") > -1 ||
       userAgentString.indexOf("rv:") > -1;
 
-    console.log(IExplorerAgent)
     return IExplorerAgent;
   }
 
   if (isUserInternetExplorer()) {
-    var bannerMessage = document.getElementById('banner-message');
-
-    bannerMessage.style.display = 'block';
+    document.getElementById('banner-message')
+      .style.display = 'block';
   }
 
 </script>

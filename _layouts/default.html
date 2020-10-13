@@ -1,51 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Danny Ohana</title>
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/style.css" />
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/style-markdown.css"/>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Danny Ohana</title>
 
-    <!-- GoogleFonts -->
-    <!-- Inter (Regular, Medium, Bold) -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700"
-      rel="stylesheet"
-    />
-    <!-- Martel Sans -->
-    <link 
-      href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;600;800&display=swap" 
-      rel="stylesheet"
-    />
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/style.css" />
+  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/style-markdown.css" />
 
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-  </head>
-  <body>
+  <!-- GoogleFonts -->
+  <!-- Inter (Regular, Medium, Bold) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700" rel="stylesheet" />
+  <!-- Martel Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;600;800&display=swap" rel="stylesheet" />
 
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+</head>
+
+<body>
+
+  <div class="banner-message", id="banner-message">
+    Internet Explorer isn't fully supported by this site. Try another browser.
+  </div>
   <a href="/">
     <div class="logo-and-name">
       <div class="logo-container">
-          <svg class="logo" width="40" height="40" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M35 0C39.5963 5.48099e-08 44.1475 0.905302 48.3939 2.66422C52.6403 4.42313 56.4987 7.00121 59.7487 10.2513C62.9988 13.5013 65.5769 17.3597 67.3358 21.6061C69.0947 25.8525 70 30.4037 70 35C70 39.5963 69.0947 44.1475 67.3358 48.3939C65.5769 52.6403 62.9988 56.4987 59.7487 59.7487C56.4987 62.9988 52.6403 65.5769 48.3939 67.3358C44.1475 69.0947 39.5963 70 35 70L35 48.3C36.7466 48.3 38.4761 47.956 40.0897 47.2876C41.7033 46.6192 43.1695 45.6395 44.4045 44.4045C45.6395 43.1695 46.6192 41.7033 47.2876 40.0897C47.956 38.4761 48.3 36.7466 48.3 35C48.3 33.2534 47.956 31.5239 47.2876 29.9103C46.6192 28.2967 45.6395 26.8305 44.4045 25.5955C43.1695 24.3605 41.7033 23.3808 40.0897 22.7124C38.4761 22.044 36.7466 21.7 35 21.7L35 0Z" fill="black"/>
-            <path d="M35 20C33.0302 20 31.0796 20.388 29.2597 21.1418C27.4399 21.8956 25.7863 23.0005 24.3934 24.3934C23.0005 25.7863 21.8956 27.4399 21.1418 29.2598C20.388 31.0796 20 33.0302 20 35C20 36.9698 20.388 38.9204 21.1418 40.7403C21.8956 42.5601 23.0005 44.2137 24.3934 45.6066C25.7863 46.9995 27.4399 48.1044 29.2598 48.8582C31.0796 49.612 33.0302 50 35 50L35 35L35 20Z" fill="black"/>
-          </svg>
+        <svg class="logo" width="40" height="40" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M35 0C39.5963 5.48099e-08 44.1475 0.905302 48.3939 2.66422C52.6403 4.42313 56.4987 7.00121 59.7487 10.2513C62.9988 13.5013 65.5769 17.3597 67.3358 21.6061C69.0947 25.8525 70 30.4037 70 35C70 39.5963 69.0947 44.1475 67.3358 48.3939C65.5769 52.6403 62.9988 56.4987 59.7487 59.7487C56.4987 62.9988 52.6403 65.5769 48.3939 67.3358C44.1475 69.0947 39.5963 70 35 70L35 48.3C36.7466 48.3 38.4761 47.956 40.0897 47.2876C41.7033 46.6192 43.1695 45.6395 44.4045 44.4045C45.6395 43.1695 46.6192 41.7033 47.2876 40.0897C47.956 38.4761 48.3 36.7466 48.3 35C48.3 33.2534 47.956 31.5239 47.2876 29.9103C46.6192 28.2967 45.6395 26.8305 44.4045 25.5955C43.1695 24.3605 41.7033 23.3808 40.0897 22.7124C38.4761 22.044 36.7466 21.7 35 21.7L35 0Z"
+            fill="black" />
+          <path
+            d="M35 20C33.0302 20 31.0796 20.388 29.2597 21.1418C27.4399 21.8956 25.7863 23.0005 24.3934 24.3934C23.0005 25.7863 21.8956 27.4399 21.1418 29.2598C20.388 31.0796 20 33.0302 20 35C20 36.9698 20.388 38.9204 21.1418 40.7403C21.8956 42.5601 23.0005 44.2137 24.3934 45.6066C25.7863 46.9995 27.4399 48.1044 29.2598 48.8582C31.0796 49.612 33.0302 50 35 50L35 35L35 20Z"
+            fill="black" />
+        </svg>
 
       </div>
       <div class="logo-name">Daniel Ohana</div>
-      <!-- <div class="links">
-        <a href="about">About</a>
-        <a href="projects">Projects</a>
-      </div> -->
     </div>
   </a>
-    {{ content }}
-  </body>
+  {{ content }}
+</body>
+
 </html>
+
+<script>
+  function isUserInternetExplorer() {
+    let userAgentString = navigator.userAgent;
+
+    let IExplorerAgent =
+      userAgentString.indexOf("MSIE") > -1 ||
+      userAgentString.indexOf("rv:") > -1;
+
+               // Detect Safari 
+               let safariAgent =  
+                userAgentString.indexOf("Safari") > -1; 
+
+    console.log(IExplorerAgent)
+    return safariAgent;
+  }
+
+  if (isUserInternetExplorer()) {
+    var bannerMessage = document.getElementById('banner-message');
+
+    bannerMessage.style.opacity = 1;
+  }
+
+</script>

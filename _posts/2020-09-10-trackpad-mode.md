@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "On-screen Trackpads"
+title:  "Trackpad Mode"
 subtitle: "This is an experimental design exploration on trackpads that are onscreen for mobile devices."
 date:   2020-09-10 08:00:00 -0500
 ---

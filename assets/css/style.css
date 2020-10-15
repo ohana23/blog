@@ -127,6 +127,8 @@ body {
   transition: ease 0.3s;
 }
 
+
+
 .projects {
   transition: ease 0.3s;
 }
@@ -238,6 +240,33 @@ section {
   cursor: pointer;
 }
 
+.books-section {
+  margin-top: 100px;
+}
+
+.bookshelf {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.shelf-item {
+  padding: 25px;
+  text-align: left;
+}
+
+.book-title {
+  color: var(--h1-color);
+  font-weight: 700;
+}
+
+.book-author {
+  color: var(--subtitle-color);
+  /* font-weight: 500; */
+}
+
 /* Mobile */
 @media (max-width: 980px) {
   body {
@@ -301,5 +330,11 @@ section {
 
   .project-description {
     font-size: 16px;
+  }
+
+  .shelf-item {
+    /* padding: 25px; */
+    /* text-align: left; */
+    width: 100%;
   }
 }

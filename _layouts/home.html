@@ -82,20 +82,97 @@ layout: default
                 </div>
             </div>
         </div>
+
+        <div class="about inactive-view" id="about">
+            <section class="image-text-block">
+                <div class="image-subblock">
+                    <img src="{{site.baseurl}}/assets/images/blog-inspiration.png"
+                        style="width: 100%; border-radius: 5px">
+                </div>
+                <div class="text-subblock">
+                    <h1>Where do you go to get inspired?</h1>
+                    <p>The web is filled with inspirational design content if you know where to look. I find that
+                        Twitter is super
+                        helpful because it's filled with hard-working, passionate designers posting their work.
+                        When I see something I like there, I'll save it to a list to view for later.
+                        Mostly, though, I'll just play with CSS. It's like painting for me. The possibilities are
+                        endless,
+                        and the more I practice it, the more I'm inspired by what I can do with it.
+                    </p>
+                </div>
+            </section>
+
+            <section class="image-text-block">
+                <div class="image-subblock">
+                    <img src="{{site.baseurl}}/assets/images/iphone-original.png"
+                        style="width: 100%; border-radius: 5px">
+                </div>
+                <div class="text-subblock">
+                    <h1>What led you into software?</h1>
+                    <p>The catalyst was probably seeing the first iPhone. My friend's mom had one and I was just
+                        enamored by it. It was
+                        one of those things you wanted really badly, and I think it was the first time I experienced
+                        software that
+                        was designed with so much thought. When I finally got one of my own (it was an iPhone 4), I'd
+                        literally just
+                        download apps all day. Though I didn't realize it then, I was setting myself up for an
+                        appreciation of great software.
+                    </p>
+                </div>
+            </section>
+
+            <section class="image-text-block">
+                <div class="image-subblock">
+                    <img src="{{site.baseurl}}/assets/images/howToTakeSmartNotesCover.jpg"
+                        style="width: 100%; border-radius: 5px">
+                </div>
+                <div class="text-subblock">
+                    <h1>What does a typical day look like for you?</h1>
+                    <p>After waking up and staring at my phone for way too long, I'll walk out onto my balcony to
+                        stretch and think for a bit - preparing myself mentally for the day. Breakfast follows. I'll
+                        then catch up
+                        on some sprint work and do email stuff. For lunch, I'll cook up the fanciest thing I can think
+                        of with the
+                        not-so-fancy ingredients in my fridge. Work a bit more, do meetings, more email stuff. You get
+                        it. After work
+                        I'll practice some React or work on my website or get away from tech altogether by biking
+                        through the beautiful
+                        Washington D.C. When that's over with I'll finish, the day with a good movie or book.
+                    </p>
+                </div>
+            </section>
+
+            <section class="image-text-block">
+                <div class="image-subblock">
+                    <img src="{{site.baseurl}}/assets/images/code-presentation.png"
+                        style="width: 100%; border-radius: 5px">
+                </div>
+                <div class="text-subblock">
+                    <h1>What's your setup?</h1>
+                    <p>I won't bore you with my corporate work setup, but my personal Macbook Air is a garden I
+                        constantly tend to.
+                        My main browser is Safari, but for development I've been loving Brave. For general notes and
+                        todos, I've been
+                        hooked on Notion, and for real writing and thought synthesizing, Roam is where it's at.
+                        Surprising nobody, my go-to
+                        editor and mock-up software are VS Code and Figma.
+                    </p>
+                </div>
+            </section>
         </div>
     </section>
 </body>
 
 <script>
     // Buttons
-    var projectsBtn = document.getElementById('projects-btn');
-    // var aboutBtn = document.getElementById('about-btn');
     var postsBtn = document.getElementById('posts-btn');
+    var projectsBtn = document.getElementById('projects-btn');
+    var aboutBtn = document.getElementById('about-btn');
 
     // Views
     var postsView = document.getElementById('posts');
     var projectsView = document.getElementById('projects');
-    // var about = document.getElementById('about');
+    var aboutView = document.getElementById('about');
 
     // Add click event listeners to each button.
     projectsBtn.addEventListener('click', () => {
@@ -104,34 +181,43 @@ layout: default
     postsBtn.addEventListener('click', () => {
         toggleActive('posts', postsView);
     });
-    // aboutBtn.addEventListener('click', () => {
-    //     toggleActive(aboutView);
-    // });
+    aboutBtn.addEventListener('click', () => {
+        toggleActive('about', aboutView);
+    });
 
+    // If the selected view is not already active, 
+    // show it and hide the others.
     function toggleActive(viewName, view) {
-        // Get the view's CSS-created display value.
-        // var isSelectedViewDisplayed = window.getComputedStyle(view, null).display === 'none'
-        //     ? false
-        //     : true;
+        var isSelectedViewActive = view.classList.contains('active-view');
 
-        var isSelectedViewActive = view.classList.contains('active-view')
+        if (!isSelectedViewActive) {
+            show(view);
 
-        // If the view is already displayed, do nothing.
-        // Otherwise, display it and hide the others.
-        isSelectedViewActive ? null : show(viewName, view);
+            switch (viewName) {
+                case 'projects':
+                    hide(postsView);
+                    hide(aboutView);
+                    break;
+                case 'posts':
+                    hide(projectsView);
+                    hide(aboutView);
+                    break;
+                case 'about':
+                    hide(postsView);
+                    hide(projectsView);
+                    break;
+            }
+        }
     }
 
-    function show(viewName, view) {
+    // Show the view.
+    function show(view) {
         view.classList.remove('inactive-view');
         view.classList.add('active-view')
-
-        // Toggle the other views.
-        viewName === 'projects'
-            ? hide(viewName, postsView)
-            : hide(viewName, projectsView);
     }
 
-    function hide(viewName, view) {
+    // Hide the view.
+    function hide(view) {
         view.classList.remove('active-view');
         view.classList.add('inactive-view');
     }

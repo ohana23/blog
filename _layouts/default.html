@@ -59,9 +59,12 @@
     return IExplorerAgent;
   }
 
-  if (isUserInternetExplorer()) {
-    document.getElementById('banner-message')
-      .style.display = 'block';
+  function displayBannerMessage() {
+    if (isUserInternetExplorer()) {
+      document.getElementById('banner-message')
+        .style.display = 'block';
+    }
   }
 
+  displayBannerMessage();
 </script>

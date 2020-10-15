@@ -11,7 +11,6 @@
   --blockquote-background-color: rgb(234, 241, 255);
   --mobile-nav-bg-color: none;
   --mobile-nav-border-color: rgba(234, 241, 255);
-  --selection-color: rgb(255, 255, 186);
   --code-bg-color: rgb(255, 240, 234);
   --code-text-color: red;
   --soft-blue: rgb(62, 83, 219);
@@ -34,13 +33,6 @@
     --code-text-color: #ffffff;
     --soft-blue: rgb(0, 119, 255);
   }
-}
-
-::selection {
-  background: var(--selection-color); /* WebKit/Blink Browsers */
-}
-::-moz-selection {
-  background: var(--selection-color); /* Gecko Browsers */
 }
 
 body {
@@ -129,6 +121,10 @@ body {
   color: var(--title-color);
   font-size: 48px;
   font-weight: 600;
+}
+
+.about {
+  transition: ease 0.3s;
 }
 
 .projects {

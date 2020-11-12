@@ -5,9 +5,9 @@
 }
 
 .section-post .date-badge {
-  color: var(--h1-color);
+  color: var(--p-color);
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .section-post .categories {

@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<script src="scripts/animejs/anime.min.js"></script>
+
 <section class="books-section">
     <h2>Fiction</h2>
     <ul class="bookshelf">
@@ -172,3 +174,16 @@ layout: default
 
     </ul>
 </section>
+
+<script>
+    anime({
+  targets: '.square',
+  scale: [
+    {value: 0.9, easing: 'easeOutSine', duration: 500},
+    {value: 1.1, easing: 'easeOutSine', duration: 1200}
+  ],
+  delay: anime.stagger(200, {grid: [5, 4], from: 'center'}),
+  direction: 'alternate',
+  loop: true
+});
+</script>

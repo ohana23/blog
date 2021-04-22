@@ -3,224 +3,83 @@ layout: default
 ---
 
 <body>
-    <section class="home-secondary">
-        <div class="main-buttons">
-            <div class="main-btn" id="posts-btn">
-                Posts<br>
-                <div class="keyboard-cmd">
-                    ⌘U
-                </div>
-            </div>
-            <div class="main-btn" id="projects-btn">
-                Projects<br>
-                <div class="keyboard-cmd">
-                    ⌘P
-                </div>
-            </div>
-            <div class="main-btn" id="about-btn">
-                About<br>
-                <div class="keyboard-cmd">
-                    ⌘A
-                </div>
-            </div>
+  <section class="hero-section">
+    <div class="section-logo">
+      <img class="hero-logo" src="{{site.baseurl}}/assets/icons/logo.svg"/>
+    </div>
+    <div class="section-text">
+      <div class="name-info">
+        Danny Ohana<br>
+        <div class="opacity-50">
+          Product Designer<br>
+          Orlando, FL
         </div>
-
-        <div class="posts active-view" id="posts">
-            <div class="articles-container">
-                {% for post in site.posts %}
-                {% assign date = post.date %}
-                <a href="{{ site.baseurl }}{{ post.url }}">
-                    {% include article.html postTitle=post.title postSubtitle=post.subtitle postDate=date postCategories=post.categories%}
-                </a>
-                {% endfor %}
-            </div>
-        </div>
-
-        <div class="projects inactive-view" id="projects">
-            <div class="project">
-                <div class="title">
-                    SportAI <span class="project-role">Product Designer</span>
-                </div>
-                <div class="subtitle">
-                    A fantasy sports analytics app
-                </div>
-            </div>
-            <div class="project">
-                <div class="title">
-                    GEICO <span class="project-role">Software Engineer</span>
-                </div>
-                <div class="subtitle">
-                    Improving the Report a Claim flow
-                </div>
-            </div>
-            <div class="project">
-                <div class="title">
-                    React Udacity Nanodegree Apps <span class="project-role">React & JavaScript Developer</span>
-                </div>
-                <div class="subtitle">
-                    A series of apps I created in order to learn React, React Native, and Redux
-                </div>
-            </div>
-            <div class="project">
-                <div class="title">
-                    Augmented Reality Product Demos <span class="project-role">Product Designer & Unity
-                        Developer</span>
-                </div>
-                <div class="subtitle">
-                    My team’s client sold large machines that were too large to ship and demo to customers and too
-                    complex to train new technicians with traditional manuals. We created an AR environment in which
-                    the client could use a HoloLens to create demos of the machine and produce interactive training
-                    guides for technicians. I led the UX discussions and helped code the frontend components.
-                </div>
-            </div>
-            <div class="project">
-                <div class="title">
-                    GoWith <span class="project-role">Product Designer & Swift Developer</span>
-                </div>
-                <div class="subtitle">
-                    An app to make travel more data-informed and social
-                </div>
-            </div>
-        </div>
-
-        <div class="about inactive-view" id="about">
-            <a href="{{site.baseurl}}/books">Bookshelf</a>
-            
-            <!-- <section class="image-text-block">
-                <div class="image-subblock">
-                    <img src="{{site.baseurl}}/assets/images/blog-inspiration.png"
-                        style="width: 100%; border-radius: 5px">
-                </div>
-                <div class="text-subblock">
-                    <h1>Where do you go to get inspired?</h1>
-                    <p>The web is filled with inspirational design content if you know where to look. I find that
-                        Twitter is super
-                        helpful because it's filled with hard-working, passionate designers posting their work.
-                        When I see something I like there, I'll save it to a list to view for later.
-                        Mostly, though, I'll just play with CSS. It's like painting for me. The possibilities are
-                        endless,
-                        and the more I practice it, the more I'm inspired by what I can do with it.
-                    </p>
-                </div>
-            </section> -->
-
-            <!-- <section class="image-text-block">
-                <div class="image-subblock">
-                    <img src="{{site.baseurl}}/assets/images/iphone-original.png"
-                        style="width: 100%; border-radius: 5px">
-                </div>
-                <div class="text-subblock">
-                    <h1>What led you into software?</h1>
-                    <p>The catalyst was probably seeing the first iPhone. My friend's mom had one and I was just
-                        enamored by it. It was
-                        one of those things you wanted really badly, and I think it was the first time I experienced
-                        software that
-                        was designed with so much thought. When I finally got one of my own (it was an iPhone 4), I'd
-                        literally just
-                        download apps all day. Though I didn't realize it then, I was setting myself up for an
-                        appreciation of great software.
-                    </p>
-                </div>
-            </section> -->
-
-            <!-- <section class="image-text-block">
-                <div class="image-subblock">
-                    <img src="{{site.baseurl}}/assets/images/howToTakeSmartNotesCover.jpg"
-                        style="width: 100%; border-radius: 5px">
-                </div>
-                <div class="text-subblock">
-                    <h1>What does a typical day look like for you?</h1>
-                    <p>After waking up and staring at my phone for way too long, I'll walk out onto my balcony to
-                        stretch and think for a bit - preparing myself mentally for the day. Breakfast follows. I'll
-                        then catch up
-                        on some sprint work and do email stuff. For lunch, I'll cook up the fanciest thing I can think
-                        of with the
-                        not-so-fancy ingredients in my fridge. Work a bit more, do meetings, more email stuff. You get
-                        it. After work
-                        I'll practice some React or work on my website or get away from tech altogether by biking
-                        through the beautiful
-                        Washington D.C. When that's over with I'll finish, the day with a good movie or book.
-                    </p>
-                </div>
-            </section> -->
-
-            <!-- <section class="image-text-block">
-                <div class="image-subblock">
-                    <img src="{{site.baseurl}}/assets/images/code-presentation.png"
-                        style="width: 100%; border-radius: 5px">
-                </div>
-                <div class="text-subblock">
-                    <h1>What's your setup?</h1>
-                    <p>I won't bore you with my corporate work setup, but my personal Macbook Air is a garden I
-                        constantly tend to.
-                        My main browser is Safari, but for development I've been loving Brave. For general notes and
-                        todos, I've been
-                        hooked on Notion, and for real writing and thought synthesizing, Roam is where it's at.
-                        Surprising nobody, my go-to
-                        editor and mock-up software are VS Code and Figma.
-                    </p>
-                </div>
-            </section> -->
-        </div>
-    </section>
+      </div>
+      <div class="about-button">
+        About ->
+      </div>
+    </div>
+  </section>
+  
+  <section class="about-section">
+    <div class="about-text">
+      <div class="pill">Hey</div>
+      <p>My name's Danny Ohana. I’m a Miami native living in Orlando, Florida.<br><br>
+        I like visuals and exploring their practical uses. Not designing for design’s sake, but for function’s sake.<br><br>
+        I’ve learned that it’s all about subtraction. Removing the extra to get to the core. That way, design is invisible.<br><br>
+      </p>
+    </div>
+    <div class="about-text">
+      <div class="pill">
+        Work
+      </div>
+    </div>
+    <div class="work-grid">
+      <div class="work-entry">
+        <div class="role">Lead Designer</div><br>
+        <div class="company">SportAI</div>
+        <div class="date-range opacity-50">October 2020 -> Now</div><br>
+        <div class="description">I designed to enable new players and empower seasoned ones, the experience gap I had to design for was large.</div>
+      </div>
+      <div class="work-entry">
+        <div class="role">Software Engineer</div><br>
+        <div class="company">GEICO</div>
+        <div class="date-range opacity-50">June 2020 -> Now</div><br>
+        <div class="description">I designed the app from the ground-up. Since SportAI’s mission is to enable new players and empower seasoned ones, the experience gap I had to design for was large.</div>
+      </div>
+      <div class="work-entry">
+        <div class="role">Designer and Augmented Reality Developer</div><br>
+        <div class="company">ABB</div>
+        <div class="date-range opacity-50">September 2018 -> May 2019</div><br>
+        <div class="description">A student project I helped develop on contract. Developed with Unity to create a novel, researched method of interacting with virtual objects in the world.</div>
+      </div>
+  </div>
+  </section>
+  <div class="miami">
+    I'm in Miami
+  </div>
 </body>
 
 <script>
-    // Buttons
-    var postsBtn = document.getElementById('posts-btn');
-    var projectsBtn = document.getElementById('projects-btn');
-    var aboutBtn = document.getElementById('about-btn');
-
-    // Views
-    var postsView = document.getElementById('posts');
-    var projectsView = document.getElementById('projects');
-    var aboutView = document.getElementById('about');
-
-    // Add click event listeners to each button.
-    projectsBtn.addEventListener('click', () => {
-        toggleActive('projects', projectsView);
+  let options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 1.0
+  }
+  
+  function callback(entries) {
+    entries.map((entry) => {
+      if (entry.isIntersecting) {
+        console.log("hello");
+        entry.target.classList.add('visible');
+      } else {
+        entry.target.classList.remove('visible');
+      }
     });
-    postsBtn.addEventListener('click', () => {
-        toggleActive('posts', postsView);
-    });
-    aboutBtn.addEventListener('click', () => {
-        toggleActive('about', aboutView);
-    });
-
-    // If the selected view is not already active, 
-    // show it and hide the others.
-    function toggleActive(viewName, view) {
-        var isSelectedViewActive = view.classList.contains('active-view');
-
-        if (!isSelectedViewActive) {
-            show(view);
-
-            switch (viewName) {
-                case 'projects':
-                    hide(postsView);
-                    hide(aboutView);
-                    break;
-                case 'posts':
-                    hide(projectsView);
-                    hide(aboutView);
-                    break;
-                case 'about':
-                    hide(postsView);
-                    hide(projectsView);
-                    break;
-            }
-        }
-    }
-
-    // Show the view.
-    function show(view) {
-        view.classList.remove('inactive-view');
-        view.classList.add('active-view')
-    }
-
-    // Hide the view.
-    function hide(view) {
-        view.classList.remove('active-view');
-        view.classList.add('inactive-view');
-    }
+  }
+  
+  const target = document.querySelector('.miami');
+  
+  let observer = new IntersectionObserver(callback);
+  observer.observe(target);
 </script>

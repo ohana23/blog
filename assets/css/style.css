@@ -6,8 +6,10 @@ body {
 }
 
 :root {
-  background-color: #eff6ee;
-  color: #1f251e;
+  /* background-color: #eff6ee; */
+  /* color: #1f251e; */
+  background-color: #101110;
+  color: #dcecd8;
   /* background-color: black;
   color: white; */
 }
@@ -15,6 +17,16 @@ body {
 body {
   font-family: "Inter", sans-serif;
   text-rendering: optimizeLegibility;
+}
+
+@media (max-width: 768px) {
+  .new-section {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 30px;
+  }
 }
 
 .hero-section,
@@ -66,7 +78,7 @@ body {
 }
 
 .about-text {
-  padding-top: 300px;
+  padding-top: 50px;
   max-width: 660px;
   margin: 0 auto;
 }
@@ -80,7 +92,7 @@ body {
 .about-text > p {
   font-size: 24px;
   line-height: 40px;
-  font-weight: 500;
+  /* font-weight: 500; */
 }
 
 .work-grid {
@@ -95,7 +107,7 @@ body {
   flex-grow: 1;
   cursor: pointer;
   background-color: rgba(10, 70, 18, 0.027);
-  color: rgb(10, 70, 18);
+  /* color: rgb(10, 70, 18); */
   margin: 4px;
   width: 1px;
   border-radius: 4px;
@@ -136,8 +148,8 @@ body {
   display: inline-block;
   border-radius: 400px;
   font-weight: 500;
-  font-size: 32px;
-  margin-bottom: 128px;
+  font-size: 24px;
+  margin-bottom: 48px;
   color: black;
 }
 

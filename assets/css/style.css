@@ -6,41 +6,60 @@ body {
 }
 
 :root {
+  --primary-color: white;
+  --secondary-color: black;
+
   /* background-color: #eff6ee; */
   /* color: #1f251e; */
-  background-color: #101110;
-  color: #dcecd8;
-  /* background-color: black;
-  color: white; */
+  /* background-color: #101110; */
+  /* color: #dcecd8; */
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 body {
   font-family: "Inter", sans-serif;
   text-rendering: optimizeLegibility;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 30px;
+  padding-top: 50px;
+  transition: 0.05s ease-in-out;
+}
+
+.content {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.logo {
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+h1 {
+  padding-top: 0px;
+  padding-bottom: 16px;
+}
+
+.social-links-list {
+  list-style: none;
+  padding: 0;
+}
+
+.social-links-list > li {
+  float: left;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.social-links-list > li > a {
+  color: var(--secondary-color);
 }
 
 @media (max-width: 768px) {
-  .new-section {
-    background-color: white;
-    color: black;
-    font-size: 16px;
-    line-height: 24px;
-    padding: 30px;
-  }
-
-  .social-links-list {
-    list-style-type: none;
-    padding: 0;
-  }
-
-  .social-links-list > li {
-    float: left;
-    padding-right: 10px;
-    padding-bottom: 10px;
-  }
-
-  .social-links-list > li > a {
-    color: black;
+  body {
+    padding-top: 30px;
   }
 }
 

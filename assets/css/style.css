@@ -27,6 +27,21 @@ body {
     line-height: 24px;
     padding: 30px;
   }
+
+  .social-links-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .social-links-list > li {
+    float: left;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+
+  .social-links-list > li > a {
+    color: black;
+  }
 }
 
 .hero-section,

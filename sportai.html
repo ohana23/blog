@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" href="{{site.baseurl}}/assets/css/style-post.css"/>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/sparanoid/lightense-images@master/lightense.min.js"></script>
+
+<body>
+  <section class="content">
+    <a href="/" class="">
+      <- Back
+    </a>
+  
+    <h1 style="margin-top: 24px;">SportAI</h1>
+    <p>SportAI is a sports analytics tool to democratize fantasy sports. It's a different take
+      on a fantasy sports apps. Whereas most pack in as much information into single screens as
+      much as possible, we designed SportAI with a different approach.
+      <br><br>
+      Aside from design,
+      SportAI's main selling point is its backend machine learning algorithm which aims to
+      predict athlete performance before their games.
+      <br><br>
+      I was the first designer at SportAI. I joined a team of 3 to revamp their design and
+      build out the look and feel of the app.
+      <br><br>
+      <img src="{{ site.baseurl }}/assets/images/yamauchi.png" style="width: 100%;">
+    </p>
+  </section>
+</body>
+
+<script>
+  // Lightense for images
+  var imgs = document.getElementsByTagName("img");
+
+  for (let i = 0; i < imgs.length; i++) {
+      imgs[i].setAttribute('data-lightense-background', 'rgba(0, 0, 0, .30)');
+  }
+
+  window.addEventListener('load', function () {
+    Lightense('img');
+  }, false);
+</script>

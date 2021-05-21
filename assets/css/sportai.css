@@ -58,11 +58,26 @@ a {
 .content > p {
   max-width: 700px;
   margin: 0 auto;
+  opacity: 0.8;
 }
 
-img {
+.image-container {
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 24px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.image-container > img {
+  margin: 0 auto;
+}
+
+.image-container > p {
+  opacity: 50%;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 @media (max-width: 768px) {

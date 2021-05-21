@@ -68,6 +68,7 @@ img {
 @media (max-width: 768px) {
   .title-container {
     margin-left: 0px;
+    margin-bottom: 30px;
   }
 
   .sportai-title {

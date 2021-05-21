@@ -1,17 +1,46 @@
 ---
-layout: default
+layout: standard
 ---
 
-<link rel="stylesheet" href="{{site.baseurl}}/assets/css/style-post.css"/>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/sparanoid/lightense-images@master/lightense.min.js"></script>
 
+<head>
+  <!-- <link rel="stylesheet" href="{{site.baseurl}}/assets/css/sportai.css" /> -->
+</head>
+
 <body>
-  <section class="content">
-    <a href="/" class="">
-      <- Back
-    </a>
+  <a href="/" class="">
+    <- Back
+  </a>
   
-    <h1 style="margin-top: 24px;">SportAI</h1>
+  <section class="title-section">
+    <div class="title-container">
+      <div class="sportai-title">SportAI</div>
+      <div class="sportai-subtitle">
+        <p>
+          SportAI is a sports analytics tool to democratize fantasy sports. It's a different take
+          on fantasy sports apps. Whereas most pack as much information as possible into a single 
+          screen, we designed SportAI with a different approach. <br><br>Here, I talk about the design
+         process and thinking behind the way we began desigining our initial version of the app.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="content">
+    <h1>Starting from scratch</h1>
+    <p>SportAI is a sports analytics tool to democratize fantasy sports. It's a different take
+      on fantasy sports apps. Whereas most pack in as much information into single screens as
+      much as possible, we designed SportAI with a different approach.
+      <br><br>
+      Aside from design,
+      SportAI's main selling point is its backend machine learning algorithm which aims to
+      predict athlete performance before their games.
+      <br><br>
+      I was the first designer at SportAI. I joined a team of 3 to revamp their design and
+      build out the look and feel of the app.
+    </p>
+    <img src="{{ site.baseurl }}/assets/images/yamauchi.png" style="width: 100%;">
     <p>SportAI is a sports analytics tool to democratize fantasy sports. It's a different take
       on a fantasy sports apps. Whereas most pack in as much information into single screens as
       much as possible, we designed SportAI with a different approach.
@@ -23,7 +52,6 @@ layout: default
       I was the first designer at SportAI. I joined a team of 3 to revamp their design and
       build out the look and feel of the app.
       <br><br>
-      <img src="{{ site.baseurl }}/assets/images/yamauchi.png" style="width: 100%;">
     </p>
   </section>
 </body>
@@ -33,7 +61,7 @@ layout: default
   var imgs = document.getElementsByTagName("img");
 
   for (let i = 0; i < imgs.length; i++) {
-      imgs[i].setAttribute('data-lightense-background', 'rgba(0, 0, 0, .30)');
+      imgs[i].setAttribute('data-lightense-background', 'rgba(0, 0, 0, .00)');
   }
 
   window.addEventListener('load', function () {

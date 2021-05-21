@@ -1,0 +1,36 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: white;
+  --secondary-color: black;
+
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  text-rendering: optimizeLegibility;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 30px;
+  transition: 0.05s ease-in-out;
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.underline {
+  border-bottom: 1.3px solid black;
+  display: inline-block;
+}
+
+.underline:hover {
+  border-bottom: 1.3px solid var(--primary-color);
+}

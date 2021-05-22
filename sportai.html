@@ -8,12 +8,15 @@ layout: standard
   <!-- <link rel="stylesheet" href="{{site.baseurl}}/assets/css/sportai.css" /> -->
 </head>
 
-<body>
-  <a href="/" class="">
-    <- Back
-  </a>
+<body onload="document.body.style.opacity='1'">
   
   <section class="title-section">
+    <a href="/" class="">
+      <- Back
+    </a>
+    <div class="image-container">
+      <img src="assets/images/sportai-startwinning.png" style="max-width: 100%; position: relative; border-radius: 30px;">
+    </div>
     <div class="title-container">
       <div class="sportai-title">SportAI</div>
       <div class="sportai-subtitle">
@@ -22,6 +25,7 @@ layout: standard
           on fantasy sports apps. Whereas most pack as much information as possible into a single 
           screen, we designed SportAI with a different approach. <br><br>Here, I talk about the design
          process and thinking behind the way we began desigining our initial version of the app.
+         <br><br>
         </p>
       </div>
     </div>
@@ -67,7 +71,7 @@ layout: standard
   var imgs = document.getElementsByTagName("img");
 
   for (let i = 0; i < imgs.length; i++) {
-      imgs[i].setAttribute('data-lightense-background', 'rgba(0, 0, 0, .00)');
+      imgs[i].setAttribute('data-lightense-background', 'rgba(0, 0, 0, .3)');
   }
 
   window.addEventListener('load', function () {

@@ -1,21 +1,49 @@
+html,
+body {
+  padding: 0px;
+}
+
+body {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
 :root {
-  background: rgb(6, 5, 42);
+  /* background: rgb(6, 5, 42);
   background: linear-gradient(
     109deg,
     rgba(6, 5, 42, 1) 0%,
     rgba(33, 16, 64, 1) 30%,
     rgba(38, 24, 73, 1) 100%
   );
-  color: var(--primary-color);
+  background: rgb(6, 5, 42);
+  background: linear-gradient(
+    109deg,
+    rgba(6, 5, 42, 1) 0%,
+    rgba(16, 23, 37, 1) 30%,
+    rgba(10, 13, 33, 1) 100%
+  ); */
+  /* background: rgb(16, 23, 37);
+  background: linear-gradient(
+    109deg,
+    rgba(16, 23, 37, 1) 0%,
+    rgba(6, 5, 42, 1) 49%,
+    rgba(10, 13, 33, 1) 100%
+  );
+  color: var(--primary-color); */
 }
 
 a {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .title-section {
-  height: 88vh;
+  /* height: 100vh; */
   position: relative;
+  /* background-color: red; */
+  background-color: white;
+  color: black;
+  padding: 20px;
 }
 
 .title-container {
@@ -24,8 +52,8 @@ a {
   /* margin-top: 88px; */
   margin-left: 64px;
   max-width: 700px;
-  position: absolute;
-  bottom: 0;
+  /* position: absolute; */
+  /* bottom: 0; */
 }
 
 .sportai-title {
@@ -40,11 +68,13 @@ a {
   line-height: 32px;
   margin-top: 32px;
   font-weight: 500;
+  padding-right: 24px;
 }
 
 .content {
-  margin-top: 300px;
+  margin-top: 100px;
   /* background-color: gray; */
+  padding: 24px;
 }
 
 .content > h1 {
@@ -96,4 +126,27 @@ a {
     font-size: 16px;
     line-height: 24px;
   }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
 }

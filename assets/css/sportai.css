@@ -100,12 +100,12 @@ a {
 
 .image-container > img {
   margin: 0 auto;
-  transition: 0.2s cubic-bezier(0.68, -0.55, 1.265, 1.55);
+  /* transition: 0.2s cubic-bezier(0.68, -0.55, 1.265, 1.55); */
 }
-
+/* 
 .image-container > img:hover {
   transform: scale(1.02);
-}
+} */
 
 .image-container > p {
   opacity: 50%;
